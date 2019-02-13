@@ -1,0 +1,339 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix puml:  <http://plantuml.com/ontology#> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix wdata: <https://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+
+prv:P276  a     owl:ObjectProperty .
+
+cc:license  a   puml:InlineProperty .
+
+psv:P31  a      owl:ObjectProperty .
+
+pqv:P31  a      owl:ObjectProperty .
+
+pr:P2013  a     owl:DatatypeProperty .
+
+pqv:P2013  a    owl:ObjectProperty .
+
+pqn:P2013  a    owl:ObjectProperty .
+
+wdno:P17  a     owl:Class .
+
+pq:P131  a      owl:ObjectProperty .
+
+p:P276  a       owl:ObjectProperty .
+
+wikibase:timeCalendarModel
+        a       puml:InlineProperty .
+
+ps:P31  a       owl:ObjectProperty .
+
+wikibase:qualifierValue
+        a       puml:InlineProperty .
+
+wds:Q61707913-c45c2d1f-4a14-c82b-410c-d72e823818cd
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P131        wd:Q1965 .
+
+pq:P17  a       owl:ObjectProperty .
+
+pr:P276  a      owl:ObjectProperty .
+
+wdt:P17  a      owl:ObjectProperty .
+
+psv:P2013  a    owl:ObjectProperty .
+
+pr:P17  a       owl:ObjectProperty .
+
+wd:P17  a                           wikibase:Property ;
+        rdfs:label                  "country"@en ;
+        schema:name                 "country"@en ;
+        wikibase:claim              p:P17 ;
+        wikibase:directClaim        wdt:P17 ;
+        wikibase:novalue            wdno:P17 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P17 ;
+        wikibase:qualifierValue     pqv:P17 ;
+        wikibase:reference          pr:P17 ;
+        wikibase:referenceValue     prv:P17 ;
+        wikibase:statementProperty  ps:P17 ;
+        wikibase:statementValue     psv:P17 ;
+        skos:prefLabel              "country"@en .
+
+wdno:P31  a     owl:Class .
+
+wd:P2013  a                             wikibase:Property ;
+        rdfs:label                      "Facebook ID"@en ;
+        schema:name                     "Facebook ID"@en ;
+        wikibase:claim                  p:P2013 ;
+        wikibase:directClaim            wdt:P2013 ;
+        wikibase:directClaimNormalized  wdtn:P2013 ;
+        wikibase:novalue                wdno:P2013 ;
+        wikibase:propertyType           wikibase:ExternalId ;
+        wikibase:qualifier              pq:P2013 ;
+        wikibase:qualifierValue         pqv:P2013 ;
+        wikibase:qualifierValueNormalized
+                pqn:P2013 ;
+        wikibase:reference              pr:P2013 ;
+        wikibase:referenceValue         prv:P2013 ;
+        wikibase:referenceValueNormalized
+                prn:P2013 ;
+        wikibase:statementProperty      ps:P2013 ;
+        wikibase:statementValue         psv:P2013 ;
+        wikibase:statementValueNormalized
+                psn:P2013 ;
+        skos:prefLabel                  "Facebook ID"@en .
+
+wd:P276  a                          wikibase:Property ;
+        rdfs:label                  "location"@en ;
+        schema:name                 "location"@en ;
+        wikibase:claim              p:P276 ;
+        wikibase:directClaim        wdt:P276 ;
+        wikibase:novalue            wdno:P276 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P276 ;
+        wikibase:qualifierValue     pqv:P276 ;
+        wikibase:reference          pr:P276 ;
+        wikibase:referenceValue     prv:P276 ;
+        wikibase:statementProperty  ps:P276 ;
+        wikibase:statementValue     psv:P276 ;
+        skos:prefLabel              "location"@en .
+
+prn:P2013  a    owl:ObjectProperty .
+
+wds:Q61707913-0fc682a8-4158-d22c-0a02-bd8e317b1a47
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P17         wd:Q16 .
+
+wikibase:claim  a  puml:InlineProperty .
+
+pr:P854  a      puml:InlineProperty .
+
+wikibase:referenceValue
+        a       puml:InlineProperty .
+
+ps:P2013  a     owl:DatatypeProperty .
+
+psv:P131  a     owl:ObjectProperty .
+
+wd:Q5   a       puml:Inline .
+
+wikibase:directClaimNormalized
+        a       puml:InlineProperty .
+
+wikibase:statementValueNormalized
+        a       puml:InlineProperty .
+
+wikibase:reference  a  puml:InlineProperty .
+
+pq:P31  a       owl:ObjectProperty .
+
+wdt:P31  a      owl:ObjectProperty .
+
+wd:Q16  a                   wikibase:Item , puml:Inline ;
+        rdfs:label          "Canada"@en ;
+        schema:description  "country in North America"@en ;
+        schema:name         "Canada"@en ;
+        skos:prefLabel      "Canada"@en .
+
+ps:P131  a      owl:ObjectProperty .
+
+pr:P31  a       owl:ObjectProperty .
+
+wd:P31  a                           wikibase:Property ;
+        rdfs:label                  "instance of"@en ;
+        schema:name                 "instance of"@en ;
+        wikibase:claim              p:P31 ;
+        wikibase:directClaim        wdt:P31 ;
+        wikibase:novalue            wdno:P31 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P31 ;
+        wikibase:qualifierValue     pqv:P31 ;
+        wikibase:reference          pr:P31 ;
+        wikibase:referenceValue     prv:P31 ;
+        wikibase:statementProperty  ps:P31 ;
+        wikibase:statementValue     psv:P31 ;
+        skos:prefLabel              "instance of"@en .
+
+pq:P276  a      owl:ObjectProperty .
+
+wdt:P2013  a    owl:DatatypeProperty .
+
+wikibase:novalue  a  puml:InlineProperty .
+
+pqv:P131  a     owl:ObjectProperty .
+
+wd:Q1348913  a              wikibase:Item ;
+        rdfs:label          "Miramichi"@en ;
+        schema:description  "human settlement"@en ;
+        schema:name         "Miramichi"@en ;
+        skos:prefLabel      "Miramichi"@en .
+
+wikibase:statementValue
+        a       puml:InlineProperty .
+
+wikibase:qualifier  a  puml:InlineProperty .
+
+wdt:P131  a     owl:ObjectProperty .
+
+wdno:P131  a    owl:Class .
+
+wd:Q33506  a                wikibase:Item ;
+        rdfs:label          "museum"@en ;
+        schema:description  "institution that holds artifacts and other objects of scientific, artistic, cultural, historical, or other importance"@en ;
+        schema:name         "museum"@en ;
+        skos:prefLabel      "museum"@en .
+
+wd:Q1965  a                 wikibase:Item ;
+        rdfs:label          "New Brunswick"@en ;
+        schema:description  "province of Canada"@en ;
+        schema:name         "New Brunswick"@en ;
+        skos:prefLabel      "New Brunswick"@en .
+
+wds:Q61707913-6bf4ed78-4560-9de2-5f82-e0ad41b69037
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P276        wd:Q1348913 .
+
+psv:P276  a     owl:ObjectProperty .
+
+prv:P17  a      owl:ObjectProperty .
+
+p:P2013  a      owl:ObjectProperty .
+
+wds:Q61707913-0da13e4f-4bb7-51e5-6456-5b615947d30e
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P2013       "beaubearsisland" .
+
+prv:P2013  a    owl:ObjectProperty .
+
+ps:P276  a      owl:ObjectProperty .
+
+wdtn:P2013  a   owl:ObjectProperty .
+
+wds:Q61707913-f49803d1-44e5-40a8-9d0e-88b6ff9275ce
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P31         wd:Q33506 .
+
+pqv:P276  a     owl:ObjectProperty .
+
+prv:P31  a      owl:ObjectProperty .
+
+wdt:P276  a     owl:ObjectProperty .
+
+wdno:P276  a    owl:Class .
+
+prv:P131  a     owl:ObjectProperty .
+
+wds:Q61707913-0d5c1c09-4017-f6e0-0d79-4d54778015a8
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P17         wd:Q16 .
+
+wd:Q61707913  a             wikibase:Item ;
+        rdfs:label          "Beaubears Island Interpretive Centre & Museum"@en ;
+        schema:description  "museum in New Brunswick, Canada"@en ;
+        schema:name         "Beaubears Island Interpretive Centre & Museum"@en ;
+        skos:prefLabel      "Beaubears Island Interpretive Centre & Museum"@en ;
+        p:P131              wds:Q61707913-c45c2d1f-4a14-c82b-410c-d72e823818cd ;
+        p:P17               wds:Q61707913-0d5c1c09-4017-f6e0-0d79-4d54778015a8 , wds:Q61707913-0fc682a8-4158-d22c-0a02-bd8e317b1a47 ;
+        p:P2013             wds:Q61707913-0da13e4f-4bb7-51e5-6456-5b615947d30e ;
+        p:P276              wds:Q61707913-6bf4ed78-4560-9de2-5f82-e0ad41b69037 ;
+        p:P31               wds:Q61707913-f49803d1-44e5-40a8-9d0e-88b6ff9275ce ;
+        wdt:P131            wd:Q1965 ;
+        wdt:P17             wd:Q16 ;
+        wdt:P2013           "beaubearsisland" ;
+        wdt:P276            wd:Q1348913 ;
+        wdt:P31             wd:Q33506 .
+
+wikibase:rank  a  puml:InlineProperty .
+
+pq:P2013  a     owl:DatatypeProperty .
+
+p:P17   a       owl:ObjectProperty .
+
+wikibase:directClaim  a  puml:InlineProperty .
+
+psn:P2013  a    owl:ObjectProperty .
+
+p:P131  a       owl:ObjectProperty .
+
+wikibase:referenceValueNormalized
+        a       puml:InlineProperty .
+
+wdno:P2013  a   owl:Class .
+
+psv:P17  a      owl:ObjectProperty .
+
+wikibase:statementProperty
+        a       puml:InlineProperty .
+
+pqv:P17  a      owl:ObjectProperty .
+
+wikibase:propertyType
+        a       puml:InlineProperty .
+
+pr:P131  a      owl:ObjectProperty .
+
+wdata:Q61707913  a              schema:Dataset ;
+        cc:license              <http://creativecommons.org/publicdomain/zero/1.0/> ;
+        schema:about            wd:Q61707913 ;
+        schema:dateModified     "2019-02-12T16:27:51Z"^^xsd:dateTime ;
+        schema:softwareVersion  "1.0.0" ;
+        schema:version          856726138 ;
+        wikibase:identifiers    1 ;
+        wikibase:sitelinks      0 ;
+        wikibase:statements     6 .
+
+wd:P131  a                          wikibase:Property ;
+        rdfs:label                  "located in the administrative territorial entity"@en ;
+        schema:name                 "located in the administrative territorial entity"@en ;
+        wikibase:claim              p:P131 ;
+        wikibase:directClaim        wdt:P131 ;
+        wikibase:novalue            wdno:P131 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P131 ;
+        wikibase:qualifierValue     pqv:P131 ;
+        wikibase:reference          pr:P131 ;
+        wikibase:referenceValue     prv:P131 ;
+        wikibase:statementProperty  ps:P131 ;
+        wikibase:statementValue     psv:P131 ;
+        skos:prefLabel              "located in the administrative territorial entity"@en .
+
+wikibase:qualifierValueNormalized
+        a       puml:InlineProperty .
+
+p:P31   a       owl:ObjectProperty .
+
+ps:P17  a       owl:ObjectProperty .

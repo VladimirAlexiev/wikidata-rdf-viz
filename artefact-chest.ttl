@@ -1,0 +1,969 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix puml:  <http://plantuml.com/ontology#> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix wdata: <https://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+
+wikibase:referenceValue
+        a       puml:InlineProperty .
+
+ps:P813  a      owl:DatatypeProperty .
+
+psv:P813  a     owl:ObjectProperty .
+
+ps:P571  a      owl:DatatypeProperty .
+
+wd:Q61707930  a             wikibase:Item ;
+        rdfs:label          "Friends of Beaubears Island Collection"@en ;
+        schema:description  "the collection of Beaubears Island Interpretive Centre & Museum"@en ;
+        schema:name         "Friends of Beaubears Island Collection"@en ;
+        skos:prefLabel      "Friends of Beaubears Island Collection"@en .
+
+psv:P2048  a    owl:ObjectProperty .
+
+psv:P571  a     owl:ObjectProperty .
+
+wds:Q61707895-7eca8f54-4983-9323-65b9-2e1f50790443
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P495        wd:Q16 .
+
+p:P2043  a      owl:ObjectProperty .
+
+psv:P31  a      owl:ObjectProperty .
+
+wdno:P854  a    owl:Class .
+
+wds:Q61707895-74692973-4575-1ece-cf08-da2dfd2d454c
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P2043       "+94"^^xsd:decimal ;
+        psn:P2043      wdv:0dd293af35024d4a73d6ee8cd1a7a106 ;
+        psv:P2043      wdv:5bc6b1134ed83fa04f3559e9747c52cb .
+
+wdno:P2048  a   owl:Class .
+
+p:P276  a       owl:ObjectProperty .
+
+pr:P276  a      owl:ObjectProperty .
+
+p:P973  a       owl:ObjectProperty .
+
+wikibase:reference  a  puml:InlineProperty .
+
+pr:P973  a      owl:ObjectProperty .
+
+psv:P1326  a    owl:ObjectProperty .
+
+cc:license  a   puml:InlineProperty .
+
+ps:P195  a      owl:ObjectProperty .
+
+ps:P366  a      owl:ObjectProperty .
+
+wd:P31  a                           wikibase:Property ;
+        rdfs:label                  "instance of"@en ;
+        schema:name                 "instance of"@en ;
+        wikibase:claim              p:P31 ;
+        wikibase:directClaim        wdt:P31 ;
+        wikibase:novalue            wdno:P31 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P31 ;
+        wikibase:qualifierValue     pqv:P31 ;
+        wikibase:reference          pr:P31 ;
+        wikibase:referenceValue     prv:P31 ;
+        wikibase:statementProperty  ps:P31 ;
+        wikibase:statementValue     psv:P31 ;
+        skos:prefLabel              "instance of"@en .
+
+wd:P813  a                          wikibase:Property ;
+        rdfs:label                  "retrieved"@en ;
+        schema:name                 "retrieved"@en ;
+        wikibase:claim              p:P813 ;
+        wikibase:directClaim        wdt:P813 ;
+        wikibase:novalue            wdno:P813 ;
+        wikibase:propertyType       wikibase:Time ;
+        wikibase:qualifier          pq:P813 ;
+        wikibase:qualifierValue     pqv:P813 ;
+        wikibase:reference          pr:P813 ;
+        wikibase:referenceValue     prv:P813 ;
+        wikibase:statementProperty  ps:P813 ;
+        wikibase:statementValue     psv:P813 ;
+        skos:prefLabel              "retrieved"@en .
+
+ps:P2048  a     owl:DatatypeProperty .
+
+wdno:P186  a    owl:Class .
+
+wds:Q61707895-78f77ac6-4963-59e7-de3f-400d39ac1601
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P973        <https://app.pch.gc.ca/...?d=AEISFOB+2011.16.4> .
+
+wdno:P1326  a   owl:Class .
+
+psv:P195  a     owl:ObjectProperty .
+
+psv:P366  a     owl:ObjectProperty .
+
+pqv:P813  a     owl:ObjectProperty .
+
+pqv:P1319  a    owl:ObjectProperty .
+
+pr:P1535  a     owl:ObjectProperty .
+
+wd:P571  a                          wikibase:Property ;
+        rdfs:label                  "inception"@en ;
+        schema:name                 "inception"@en ;
+        wikibase:claim              p:P571 ;
+        wikibase:directClaim        wdt:P571 ;
+        wikibase:novalue            wdno:P571 ;
+        wikibase:propertyType       wikibase:Time ;
+        wikibase:qualifier          pq:P571 ;
+        wikibase:qualifierValue     pqv:P571 ;
+        wikibase:reference          pr:P571 ;
+        wikibase:referenceValue     prv:P571 ;
+        wikibase:statementProperty  ps:P571 ;
+        wikibase:statementValue     psv:P571 ;
+        skos:prefLabel              "inception"@en .
+
+pqv:P2049  a    owl:ObjectProperty .
+
+wdv:ba14e4af12574279885deba410341389
+        a                            wikibase:QuantityValue ;
+        wikibase:quantityAmount      +0.43 ;
+        wikibase:quantityNormalized  wdv:ba14e4af12574279885deba410341389 ;
+        wikibase:quantityUnit        wd:Q11573 .
+
+pqv:P571  a     owl:ObjectProperty .
+
+wdv:5438cceef298ead9577dd5f111a3d466
+        a                           wikibase:TimeValue ;
+        wikibase:timeCalendarModel  wd:Q1985727 ;
+        wikibase:timePrecision      11 ;
+        wikibase:timeTimezone       0 ;
+        wikibase:timeValue          "2019-02-12T00:00:00Z"^^xsd:dateTime .
+
+ps:P1326  a     owl:DatatypeProperty .
+
+wd:Q474200  a               wikibase:Item ;
+        rdfs:label          "shipbuilding"@en ;
+        schema:description  "construction of ships and floating vessels"@en ;
+        schema:name         "shipbuilding"@en ;
+        skos:prefLabel      "shipbuilding"@en .
+
+wikibase:statementProperty
+        a       puml:InlineProperty .
+
+psv:P2043  a    owl:ObjectProperty .
+
+wdv:51cff722ed35c399e75c1392e8b5fd74
+        a                           wikibase:TimeValue ;
+        wikibase:timeCalendarModel  wd:Q1985727 ;
+        wikibase:timePrecision      8 ;
+        wikibase:timeTimezone       0 ;
+        wikibase:timeValue          "1800-01-01T00:00:00Z"^^xsd:dateTime .
+
+ps:P495  a      owl:ObjectProperty .
+
+pq:P854  a      owl:ObjectProperty .
+
+psv:P495  a     owl:ObjectProperty .
+
+wdno:P2043  a   owl:Class .
+
+wdt:P276  a     owl:ObjectProperty .
+
+wd:P195  a                          wikibase:Property ;
+        rdfs:label                  "collection"@en ;
+        schema:name                 "collection"@en ;
+        wikibase:claim              p:P195 ;
+        wikibase:directClaim        wdt:P195 ;
+        wikibase:novalue            wdno:P195 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P195 ;
+        wikibase:qualifierValue     pqv:P195 ;
+        wikibase:reference          pr:P195 ;
+        wikibase:referenceValue     prv:P195 ;
+        wikibase:statementProperty  ps:P195 ;
+        wikibase:statementValue     psv:P195 ;
+        skos:prefLabel              "collection"@en .
+
+wd:P366  a                          wikibase:Property ;
+        rdfs:label                  "use"@en ;
+        schema:name                 "use"@en ;
+        wikibase:claim              p:P366 ;
+        wikibase:directClaim        wdt:P366 ;
+        wikibase:novalue            wdno:P366 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P366 ;
+        wikibase:qualifierValue     pqv:P366 ;
+        wikibase:reference          pr:P366 ;
+        wikibase:referenceValue     prv:P366 ;
+        wikibase:statementProperty  ps:P366 ;
+        wikibase:statementValue     psv:P366 ;
+        skos:prefLabel              "use"@en .
+
+wdt:P973  a     owl:ObjectProperty .
+
+pqv:P366  a     owl:ObjectProperty .
+
+pq:P2048  a     owl:DatatypeProperty .
+
+pqv:P195  a     owl:ObjectProperty .
+
+pq:P186  a      owl:ObjectProperty .
+
+wd:Q366134  a               wikibase:Item ;
+        rdfs:label          "chest"@en ;
+        schema:description  "type of furniture"@en ;
+        schema:name         "chest"@en ;
+        skos:prefLabel      "chest"@en .
+
+ps:P2043  a     owl:DatatypeProperty .
+
+p:P813  a       owl:ObjectProperty .
+
+pr:P813  a      owl:DatatypeProperty .
+
+pq:P1326  a     owl:DatatypeProperty .
+
+p:P31   a       owl:ObjectProperty .
+
+prv:P217  a     owl:ObjectProperty .
+
+wdref:308ea5f165c76261b3465092bbc71c0aff5a3602
+        a         wikibase:Reference ;
+        pr:P813   "2019-02-12T00:00:00Z"^^xsd:dateTime ;
+        prv:P813  wdv:5438cceef298ead9577dd5f111a3d466 .
+
+p:P571  a       owl:ObjectProperty .
+
+wd:P495  a                          wikibase:Property ;
+        rdfs:label                  "country of origin"@en ;
+        schema:name                 "country of origin"@en ;
+        wikibase:claim              p:P495 ;
+        wikibase:directClaim        wdt:P495 ;
+        wikibase:novalue            wdno:P495 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P495 ;
+        wikibase:qualifierValue     pqv:P495 ;
+        wikibase:reference          pr:P495 ;
+        wikibase:referenceValue     prv:P495 ;
+        wikibase:statementProperty  ps:P495 ;
+        wikibase:statementValue     psv:P495 ;
+        skos:prefLabel              "country of origin"@en .
+
+pr:P571  a      owl:DatatypeProperty .
+
+pqv:P495  a     owl:ObjectProperty .
+
+pqv:P1535  a    owl:ObjectProperty .
+
+psn:P2049  a    owl:ObjectProperty .
+
+pq:P2043  a     owl:DatatypeProperty .
+
+wds:Q61707895-061ffde1-4792-7a07-5d12-89839642c08b
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P195        wd:Q61707930 .
+
+p:P195  a       owl:ObjectProperty .
+
+p:P366  a       owl:ObjectProperty .
+
+pr:P195  a      owl:ObjectProperty .
+
+pr:P366  a      owl:ObjectProperty .
+
+wdt:P813  a     owl:DatatypeProperty .
+
+wdno:P276  a    owl:Class .
+
+wdno:P973  a    owl:Class .
+
+wdt:P571  a     owl:DatatypeProperty .
+
+p:P1319  a      owl:ObjectProperty .
+
+p:P2049  a      owl:ObjectProperty .
+
+wd:P2048  a                             wikibase:Property ;
+        rdfs:label                      "height"@en ;
+        schema:name                     "height"@en ;
+        wikibase:claim                  p:P2048 ;
+        wikibase:directClaim            wdt:P2048 ;
+        wikibase:directClaimNormalized  wdtn:P2048 ;
+        wikibase:novalue                wdno:P2048 ;
+        wikibase:propertyType           wikibase:Quantity ;
+        wikibase:qualifier              pq:P2048 ;
+        wikibase:qualifierValue         pqv:P2048 ;
+        wikibase:qualifierValueNormalized
+                pqn:P2048 ;
+        wikibase:reference              pr:P2048 ;
+        wikibase:referenceValue         prv:P2048 ;
+        wikibase:referenceValueNormalized
+                prn:P2048 ;
+        wikibase:statementProperty      ps:P2048 ;
+        wikibase:statementValue         psv:P2048 ;
+        wikibase:statementValueNormalized
+                psn:P2048 ;
+        skos:prefLabel                  "height"@en .
+
+wdt:P2048  a    owl:DatatypeProperty .
+
+p:P495  a       owl:ObjectProperty .
+
+pr:P495  a      owl:ObjectProperty .
+
+prv:P2048  a    owl:ObjectProperty .
+
+wds:Q61707895-665b8810-40da-c5d6-0336-0d1f162bee72
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P366        wd:Q845249 .
+
+wdv:431cf1959f4fda1503da44ccf5ccabcb
+        a                           wikibase:TimeValue ;
+        wikibase:timeCalendarModel  wd:Q1985727 ;
+        wikibase:timePrecision      9 ;
+        wikibase:timeTimezone       0 ;
+        wikibase:timeValue          "1850-01-01T00:00:00Z"^^xsd:dateTime .
+
+wikibase:statementValue
+        a       puml:InlineProperty .
+
+wdref:fca2e77aeb6c2aaf562ecd364920f2cfc2047a6a
+        a        wikibase:Reference ;
+        pr:P854  <https://app.pch.gc.ca/...?d=AEISFOB+2011.16.4> .
+
+wd:P1326  a                         wikibase:Property ;
+        rdfs:label                  "latest date"@en ;
+        schema:name                 "latest date"@en ;
+        wikibase:claim              p:P1326 ;
+        wikibase:directClaim        wdt:P1326 ;
+        wikibase:novalue            wdno:P1326 ;
+        wikibase:propertyType       wikibase:Time ;
+        wikibase:qualifier          pq:P1326 ;
+        wikibase:qualifierValue     pqv:P1326 ;
+        wikibase:reference          pr:P1326 ;
+        wikibase:referenceValue     prv:P1326 ;
+        wikibase:statementProperty  ps:P1326 ;
+        wikibase:statementValue     psv:P1326 ;
+        skos:prefLabel              "latest date"@en .
+
+wdt:P1326  a    owl:DatatypeProperty .
+
+wdt:P195  a     owl:ObjectProperty .
+
+wdt:P366  a     owl:ObjectProperty .
+
+prv:P1326  a    owl:ObjectProperty .
+
+wds:Q61707895-9cd67006-4558-18dc-57fe-ee94c6351e37
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        pq:P195        wd:Q61707930 ;
+        ps:P217        "FOB 2011.16.4" .
+
+pq:P276  a      owl:ObjectProperty .
+
+wdata:Q61707895  a              schema:Dataset ;
+        cc:license              <http://creativecommons.org/publicdomain/zero/1.0/> ;
+        schema:about            wd:Q61707895 ;
+        schema:dateModified     "2019-02-13T08:10:37Z"^^xsd:dateTime ;
+        schema:softwareVersion  "1.0.0" ;
+        schema:version          857234947 ;
+        wikibase:identifiers    0 ;
+        wikibase:sitelinks      0 ;
+        wikibase:statements     17 .
+
+pq:P973  a      owl:ObjectProperty .
+
+wd:Q16  a                   wikibase:Item , puml:Inline ;
+        rdfs:label          "Canada"@en ;
+        schema:description  "country in North America"@en ;
+        schema:name         "Canada"@en ;
+        skos:prefLabel      "Canada"@en .
+
+wdtn:P2048  a   owl:DatatypeProperty .
+
+ps:P217  a      owl:DatatypeProperty .
+
+psv:P1319  a    owl:ObjectProperty .
+
+wd:Q5   a       puml:Inline .
+
+wikibase:claim  a  puml:InlineProperty .
+
+wikibase:rank  a  puml:InlineProperty .
+
+psv:P2049  a    owl:ObjectProperty .
+
+psv:P217  a     owl:ObjectProperty .
+
+prv:P854  a     owl:ObjectProperty .
+
+wdno:P1319  a   owl:Class .
+
+wd:P2043  a                             wikibase:Property ;
+        rdfs:label                      "length"@en ;
+        schema:name                     "length"@en ;
+        wikibase:claim                  p:P2043 ;
+        wikibase:directClaim            wdt:P2043 ;
+        wikibase:directClaimNormalized  wdtn:P2043 ;
+        wikibase:novalue                wdno:P2043 ;
+        wikibase:propertyType           wikibase:Quantity ;
+        wikibase:qualifier              pq:P2043 ;
+        wikibase:qualifierValue         pqv:P2043 ;
+        wikibase:qualifierValueNormalized
+                pqn:P2043 ;
+        wikibase:reference              pr:P2043 ;
+        wikibase:referenceValue         prv:P2043 ;
+        wikibase:referenceValueNormalized
+                prn:P2043 ;
+        wikibase:statementProperty      ps:P2043 ;
+        wikibase:statementValue         psv:P2043 ;
+        wikibase:statementValueNormalized
+                psn:P2043 ;
+        skos:prefLabel                  "length"@en .
+
+pqn:P2048  a    owl:ObjectProperty .
+
+wdt:P2043  a    owl:DatatypeProperty .
+
+wdt:P495  a     owl:ObjectProperty .
+
+prv:P31  a      owl:ObjectProperty .
+
+prv:P2043  a    owl:ObjectProperty .
+
+wdno:P2049  a   owl:Class .
+
+wikibase:statementValueNormalized
+        a       puml:InlineProperty .
+
+wdno:P813  a    owl:Class .
+
+p:P1535  a      owl:ObjectProperty .
+
+ps:P1319  a     owl:DatatypeProperty .
+
+wds:Q61707895-b3245628-4ffe-c5df-1cfa-bfa68f459415
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P31         wd:Q366134 .
+
+prv:P186  a     owl:ObjectProperty .
+
+wdno:P571  a    owl:Class .
+
+wd:Q61708013  a             wikibase:Item ;
+        rdfs:label          "Murtagh Carroll"@en ;
+        schema:description  "19C shipbuilder on Beaubears Island"@en ;
+        schema:name         "Murtagh Carroll"@en ;
+        skos:prefLabel      "Murtagh Carroll"@en .
+
+ps:P2049  a     owl:DatatypeProperty .
+
+wd:Q845249  a               wikibase:Item ;
+        rdfs:label          "logging"@en ;
+        schema:description  "the cutting, skidding, on-site processing, and loading of trees or logs onto transport vehicles"@en ;
+        schema:name         "logging"@en ;
+        skos:prefLabel      "logging"@en .
+
+prn:P2048  a    owl:ObjectProperty .
+
+wd:Q1965  a                 wikibase:Item ;
+        rdfs:label          "New Brunswick"@en ;
+        schema:description  "province of Canada"@en ;
+        schema:name         "New Brunswick"@en ;
+        skos:prefLabel      "New Brunswick"@en .
+
+wd:P217  a                          wikibase:Property ;
+        rdfs:label                  "inventory number"@en ;
+        schema:name                 "inventory number"@en ;
+        wikibase:claim              p:P217 ;
+        wikibase:directClaim        wdt:P217 ;
+        wikibase:novalue            wdno:P217 ;
+        wikibase:propertyType       wikibase:String ;
+        wikibase:qualifier          pq:P217 ;
+        wikibase:qualifierValue     pqv:P217 ;
+        wikibase:reference          pr:P217 ;
+        wikibase:referenceValue     prv:P217 ;
+        wikibase:statementProperty  ps:P217 ;
+        wikibase:statementValue     psv:P217 ;
+        skos:prefLabel              "inventory number"@en .
+
+wds:Q61707895-776355b3-4a4c-cc88-6354-cca5d812bfcc
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P186        wd:Q287 .
+
+wdtn:P2043  a   owl:DatatypeProperty .
+
+pqv:P217  a     owl:ObjectProperty .
+
+wds:Q61707895-148eb08b-4e18-0d7c-ad82-ce51c011f853
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        pq:P195        wd:Q61708038 ;
+        ps:P217        "AEISFOB+2011.16.4" .
+
+wikibase:qualifier  a  puml:InlineProperty .
+
+wdno:P195  a    owl:Class .
+
+wdno:P366  a    owl:Class .
+
+pqn:P2043  a    owl:ObjectProperty .
+
+wds:Q61707895-9eb4b2b6-4a2d-50d6-2be0-7d8265e497ac
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P2048       "+34"^^xsd:decimal ;
+        psn:P2048      wdv:608dc2735d9ee8bc21438127ebdf290d ;
+        psv:P2048      wdv:39de27fff8ca7b53f30b8f94b70ebdab .
+
+pq:P813  a      owl:DatatypeProperty .
+
+psv:P1535  a    owl:ObjectProperty .
+
+pq:P1319  a     owl:DatatypeProperty .
+
+pq:P571  a      owl:DatatypeProperty .
+
+wd:Q61707913  a             wikibase:Item ;
+        rdfs:label          "Beaubears Island Interpretive Centre & Museum"@en ;
+        schema:description  "museum in New Brunswick, Canada"@en ;
+        schema:name         "Beaubears Island Interpretive Centre & Museum"@en ;
+        skos:prefLabel      "Beaubears Island Interpretive Centre & Museum"@en .
+
+pq:P2049  a     owl:DatatypeProperty .
+
+wdno:P1535  a   owl:Class .
+
+prn:P2043  a    owl:ObjectProperty .
+
+wdno:P495  a    owl:Class .
+
+ps:P1535  a     owl:ObjectProperty .
+
+pq:P366  a      owl:ObjectProperty .
+
+p:P217  a       owl:ObjectProperty .
+
+pr:P217  a      owl:DatatypeProperty .
+
+pq:P195  a      owl:ObjectProperty .
+
+pr:P2048  a     owl:DatatypeProperty .
+
+ps:P854  a      owl:ObjectProperty .
+
+wdt:P31  a      owl:ObjectProperty .
+
+wikibase:propertyType
+        a       puml:InlineProperty .
+
+psv:P854  a     owl:ObjectProperty .
+
+wikibase:qualifierValueNormalized
+        a       puml:InlineProperty .
+
+pr:P1326  a     owl:DatatypeProperty .
+
+ps:P186  a      owl:ObjectProperty .
+
+wikibase:novalue  a  puml:InlineProperty .
+
+pq:P495  a      owl:ObjectProperty .
+
+psv:P186  a     owl:ObjectProperty .
+
+pq:P1535  a     owl:ObjectProperty .
+
+prv:P276  a     owl:ObjectProperty .
+
+prv:P973  a     owl:ObjectProperty .
+
+pq:P31  a       owl:ObjectProperty .
+
+pqv:P31  a      owl:ObjectProperty .
+
+wdt:P217  a     owl:DatatypeProperty .
+
+wd:P854  a                          wikibase:Property ;
+        rdfs:label                  "reference URL"@en ;
+        schema:name                 "reference URL"@en ;
+        wikibase:claim              p:P854 ;
+        wikibase:directClaim        wdt:P854 ;
+        wikibase:novalue            wdno:P854 ;
+        wikibase:propertyType       wikibase:Url ;
+        wikibase:qualifier          pq:P854 ;
+        wikibase:qualifierValue     pqv:P854 ;
+        wikibase:reference          pr:P854 ;
+        wikibase:referenceValue     prv:P854 ;
+        wikibase:statementProperty  ps:P854 ;
+        wikibase:statementValue     psv:P854 ;
+        skos:prefLabel              "reference URL"@en .
+
+pr:P2043  a     owl:DatatypeProperty .
+
+wd:P1319  a                         wikibase:Property ;
+        rdfs:label                  "earliest date"@en ;
+        schema:name                 "earliest date"@en ;
+        wikibase:claim              p:P1319 ;
+        wikibase:directClaim        wdt:P1319 ;
+        wikibase:novalue            wdno:P1319 ;
+        wikibase:propertyType       wikibase:Time ;
+        wikibase:qualifier          pq:P1319 ;
+        wikibase:qualifierValue     pqv:P1319 ;
+        wikibase:reference          pr:P1319 ;
+        wikibase:referenceValue     prv:P1319 ;
+        wikibase:statementProperty  ps:P1319 ;
+        wikibase:statementValue     psv:P1319 ;
+        skos:prefLabel              "earliest date"@en .
+
+wdt:P1319  a    owl:DatatypeProperty .
+
+wdv:0dd293af35024d4a73d6ee8cd1a7a106
+        a                            wikibase:QuantityValue ;
+        wikibase:quantityAmount      +0.94 ;
+        wikibase:quantityNormalized  wdv:0dd293af35024d4a73d6ee8cd1a7a106 ;
+        wikibase:quantityUnit        wd:Q11573 .
+
+pqv:P854  a     owl:ObjectProperty .
+
+prv:P1319  a    owl:ObjectProperty .
+
+wd:P2049  a                             wikibase:Property ;
+        rdfs:label                      "width"@en ;
+        schema:name                     "width"@en ;
+        wikibase:claim                  p:P2049 ;
+        wikibase:directClaim            wdt:P2049 ;
+        wikibase:directClaimNormalized  wdtn:P2049 ;
+        wikibase:novalue                wdno:P2049 ;
+        wikibase:propertyType           wikibase:Quantity ;
+        wikibase:qualifier              pq:P2049 ;
+        wikibase:qualifierValue         pqv:P2049 ;
+        wikibase:qualifierValueNormalized
+                pqn:P2049 ;
+        wikibase:reference              pr:P2049 ;
+        wikibase:referenceValue         prv:P2049 ;
+        wikibase:referenceValueNormalized
+                prn:P2049 ;
+        wikibase:statementProperty      ps:P2049 ;
+        wikibase:statementValue         psv:P2049 ;
+        wikibase:statementValueNormalized
+                psn:P2049 ;
+        skos:prefLabel                  "width"@en .
+
+wdt:P2049  a    owl:DatatypeProperty .
+
+prv:P2049  a    owl:ObjectProperty .
+
+wd:P186  a                          wikibase:Property ;
+        rdfs:label                  "material used"@en ;
+        schema:name                 "material used"@en ;
+        wikibase:claim              p:P186 ;
+        wikibase:directClaim        wdt:P186 ;
+        wikibase:novalue            wdno:P186 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P186 ;
+        wikibase:qualifierValue     pqv:P186 ;
+        wikibase:reference          pr:P186 ;
+        wikibase:referenceValue     prv:P186 ;
+        wikibase:statementProperty  ps:P186 ;
+        wikibase:statementValue     psv:P186 ;
+        skos:prefLabel              "material used"@en .
+
+pqv:P2048  a    owl:ObjectProperty .
+
+wds:Q61707895-608da007-4347-4f02-e234-be6b97a71fa6
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P366        wd:Q474200 .
+
+wikibase:directClaimNormalized
+        a       puml:InlineProperty .
+
+pqv:P186  a     owl:ObjectProperty .
+
+wd:Q61707895  a             wikibase:Item ;
+        rdfs:label          "Chest"@en ;
+        schema:description  "artefact at Friends of Beaubears Island Collection \" Beaubears Shipbuilding Section"@en ;
+        schema:name         "Chest"@en ;
+        skos:prefLabel      "Chest"@en ;
+        p:P1535             wds:Q61707895-93a6a9f4-4569-bf3c-3d3e-2e47eb4043c9 ;
+        p:P186              wds:Q61707895-8c890056-475d-8f07-cd45-d89a8669521a , wds:Q61707895-776355b3-4a4c-cc88-6354-cca5d812bfcc ;
+        p:P195              wds:Q61707895-061ffde1-4792-7a07-5d12-89839642c08b ;
+        p:P2043             wds:Q61707895-74692973-4575-1ece-cf08-da2dfd2d454c ;
+        p:P2048             wds:Q61707895-9eb4b2b6-4a2d-50d6-2be0-7d8265e497ac ;
+        p:P2049             wds:Q61707895-171d6135-4081-ca8a-292f-59c279158621 ;
+        p:P217              wds:Q61707895-148eb08b-4e18-0d7c-ad82-ce51c011f853 , wds:Q61707895-9cd67006-4558-18dc-57fe-ee94c6351e37 ;
+        p:P276              wds:Q61707895-f3d0dbf9-4ea2-262b-0bd2-31576ea210f3 ;
+        p:P31               wds:Q61707895-b3245628-4ffe-c5df-1cfa-bfa68f459415 ;
+        p:P366              wds:Q61707895-608da007-4347-4f02-e234-be6b97a71fa6 , wds:Q61707895-665b8810-40da-c5d6-0336-0d1f162bee72 , wds:Q61707895-ac045d73-4703-f77b-41bb-fad90180326d ;
+        p:P495              wds:Q61707895-7eca8f54-4983-9323-65b9-2e1f50790443 ;
+        p:P571              wds:Q61707895-5d663c08-497e-9b85-c884-84456188b7c4 ;
+        p:P973              wds:Q61707895-78f77ac6-4963-59e7-de3f-400d39ac1601 ;
+        wdt:P1535           wd:Q61708013 ;
+        wdt:P186            wd:Q11426 , wd:Q287 ;
+        wdt:P195            wd:Q61707930 ;
+        wdt:P2043           "+94"^^xsd:decimal ;
+        wdt:P2048           "+34"^^xsd:decimal ;
+        wdt:P2049           "+43"^^xsd:decimal ;
+        wdt:P217            "FOB 2011.16.4" , "AEISFOB+2011.16.4" ;
+        wdt:P276            wd:Q61707913 ;
+        wdt:P31             wd:Q366134 ;
+        wdt:P366            wd:Q19605956 , wd:Q845249 , wd:Q474200 ;
+        wdt:P495            wd:Q16 ;
+        wdt:P571            "1800-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P973            <https://app.pch.gc.ca/...?d=AEISFOB+2011.16.4> .
+
+wdv:5bc6b1134ed83fa04f3559e9747c52cb
+        a                            wikibase:QuantityValue ;
+        wikibase:quantityAmount      "+94"^^xsd:decimal ;
+        wikibase:quantityNormalized  wdv:0dd293af35024d4a73d6ee8cd1a7a106 ;
+        wikibase:quantityUnit        wd:Q174728 .
+
+pqv:P1326  a    owl:ObjectProperty .
+
+wikibase:directClaim  a  puml:InlineProperty .
+
+wdtn:P2049  a   owl:DatatypeProperty .
+
+wd:Q11426  a                wikibase:Item ;
+        rdfs:label          "metal"@en ;
+        schema:description  "element, compound, or alloy that is a good conductor of both electricity and heat"@en ;
+        schema:name         "metal"@en ;
+        skos:prefLabel      "metal"@en .
+
+wd:Q287  a                  wikibase:Item ;
+        rdfs:label          "wood"@en ;
+        schema:description  "fibrous material from trees or other plants"@en ;
+        schema:name         "wood"@en ;
+        skos:prefLabel      "wood"@en .
+
+wdv:b6738f8b37a5c22731161e23be317f01
+        a                           wikibase:TimeValue ;
+        wikibase:timeCalendarModel  wd:Q1985727 ;
+        wikibase:timePrecision      9 ;
+        wikibase:timeTimezone       0 ;
+        wikibase:timeValue          "1880-01-01T00:00:00Z"^^xsd:dateTime .
+
+p:P854  a       owl:ObjectProperty .
+
+pqn:P2049  a    owl:ObjectProperty .
+
+wdv:39de27fff8ca7b53f30b8f94b70ebdab
+        a                            wikibase:QuantityValue ;
+        wikibase:quantityAmount      "+34"^^xsd:decimal ;
+        wikibase:quantityNormalized  wdv:608dc2735d9ee8bc21438127ebdf290d ;
+        wikibase:quantityUnit        wd:Q174728 .
+
+pr:P854  a      owl:ObjectProperty , puml:InlineProperty .
+
+prv:P813  a     owl:ObjectProperty .
+
+wd:Q203605  a               wikibase:Item ;
+        rdfs:label          "carpentry"@en ;
+        schema:description  "skilled trade"@en ;
+        schema:name         "carpentry"@en ;
+        skos:prefLabel      "carpentry"@en .
+
+wikibase:referenceValueNormalized
+        a       puml:InlineProperty .
+
+wdv:26a22faa3201bd861de726e85d61a794
+        a                            wikibase:QuantityValue ;
+        wikibase:quantityAmount      "+43"^^xsd:decimal ;
+        wikibase:quantityNormalized  wdv:ba14e4af12574279885deba410341389 ;
+        wikibase:quantityUnit        wd:Q174728 .
+
+pqv:P2043  a    owl:ObjectProperty .
+
+prv:P571  a     owl:ObjectProperty .
+
+wikibase:timeCalendarModel
+        a       puml:InlineProperty .
+
+wd:P1535  a                         wikibase:Property ;
+        rdfs:label                  "used by"@en ;
+        schema:name                 "used by"@en ;
+        wikibase:claim              p:P1535 ;
+        wikibase:directClaim        wdt:P1535 ;
+        wikibase:novalue            wdno:P1535 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P1535 ;
+        wikibase:qualifierValue     pqv:P1535 ;
+        wikibase:reference          pr:P1535 ;
+        wikibase:referenceValue     prv:P1535 ;
+        wikibase:statementProperty  ps:P1535 ;
+        wikibase:statementValue     psv:P1535 ;
+        skos:prefLabel              "used by"@en .
+
+wdt:P1535  a    owl:ObjectProperty .
+
+wdno:P217  a    owl:Class .
+
+prv:P1535  a    owl:ObjectProperty .
+
+p:P186  a       owl:ObjectProperty .
+
+pr:P186  a      owl:ObjectProperty .
+
+wdv:608dc2735d9ee8bc21438127ebdf290d
+        a                            wikibase:QuantityValue ;
+        wikibase:quantityAmount      +0.34 ;
+        wikibase:quantityNormalized  wdv:608dc2735d9ee8bc21438127ebdf290d ;
+        wikibase:quantityUnit        wd:Q11573 .
+
+prn:P2049  a    owl:ObjectProperty .
+
+wds:Q61707895-f3d0dbf9-4ea2-262b-0bd2-31576ea210f3
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P276        wd:Q61707913 .
+
+ps:P276  a      owl:ObjectProperty .
+
+wds:Q61707895-8c890056-475d-8f07-cd45-d89a8669521a
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P186        wd:Q11426 .
+
+psn:P2048  a    owl:ObjectProperty .
+
+ps:P973  a      owl:ObjectProperty .
+
+ps:P31  a       owl:ObjectProperty .
+
+wikibase:qualifierValue
+        a       puml:InlineProperty .
+
+psv:P276  a     owl:ObjectProperty .
+
+psv:P973  a     owl:ObjectProperty .
+
+prv:P195  a     owl:ObjectProperty .
+
+prv:P366  a     owl:ObjectProperty .
+
+wdt:P854  a     owl:ObjectProperty .
+
+pq:P217  a      owl:DatatypeProperty .
+
+wdno:P31  a     owl:Class .
+
+wdt:P186  a     owl:ObjectProperty .
+
+pr:P31  a       owl:ObjectProperty .
+
+wd:P276  a                          wikibase:Property ;
+        rdfs:label                  "location"@en ;
+        schema:name                 "location"@en ;
+        wikibase:claim              p:P276 ;
+        wikibase:directClaim        wdt:P276 ;
+        wikibase:novalue            wdno:P276 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P276 ;
+        wikibase:qualifierValue     pqv:P276 ;
+        wikibase:reference          pr:P276 ;
+        wikibase:referenceValue     prv:P276 ;
+        wikibase:statementProperty  ps:P276 ;
+        wikibase:statementValue     psv:P276 ;
+        skos:prefLabel              "location"@en .
+
+wd:P973  a                          wikibase:Property ;
+        rdfs:label                  "described at URL"@en ;
+        schema:name                 "described at URL"@en ;
+        wikibase:claim              p:P973 ;
+        wikibase:directClaim        wdt:P973 ;
+        wikibase:novalue            wdno:P973 ;
+        wikibase:propertyType       wikibase:Url ;
+        wikibase:qualifier          pq:P973 ;
+        wikibase:qualifierValue     pqv:P973 ;
+        wikibase:reference          pr:P973 ;
+        wikibase:referenceValue     prv:P973 ;
+        wikibase:statementProperty  ps:P973 ;
+        wikibase:statementValue     psv:P973 ;
+        skos:prefLabel              "described at URL"@en .
+
+prv:P495  a     owl:ObjectProperty .
+
+p:P2048  a      owl:ObjectProperty .
+
+wds:Q61707895-93a6a9f4-4569-bf3c-3d3e-2e47eb4043c9
+        a                    wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank        wikibase:NormalRank ;
+        prov:wasDerivedFrom  wdref:308ea5f165c76261b3465092bbc71c0aff5a3602 , wdref:fca2e77aeb6c2aaf562ecd364920f2cfc2047a6a ;
+        ps:P1535             wd:Q61708013 .
+
+psn:P2043  a    owl:ObjectProperty .
+
+pqv:P276  a     owl:ObjectProperty .
+
+pqv:P973  a     owl:ObjectProperty .
+
+wds:Q61707895-ac045d73-4703-f77b-41bb-fad90180326d
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P366        wd:Q19605956 .
+
+pr:P1319  a     owl:DatatypeProperty .
+
+wds:Q61707895-5d663c08-497e-9b85-c884-84456188b7c4
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        pq:P1319       "1850-01-01T00:00:00Z"^^xsd:dateTime ;
+        pq:P1326       "1880-01-01T00:00:00Z"^^xsd:dateTime ;
+        pq:P276        wd:Q1965 ;
+        pqv:P1319      wdv:431cf1959f4fda1503da44ccf5ccabcb ;
+        pqv:P1326      wdv:b6738f8b37a5c22731161e23be317f01 ;
+        ps:P571        "1800-01-01T00:00:00Z"^^xsd:dateTime ;
+        psv:P571       wdv:51cff722ed35c399e75c1392e8b5fd74 .
+
+wd:Q61708038  a         wikibase:Item ;
+        rdfs:label      "Artefacts Canada"@en ;
+        schema:name     "Artefacts Canada"@en ;
+        skos:prefLabel  "Artefacts Canada"@en .
+
+pr:P2049  a     owl:DatatypeProperty .
+
+p:P1326  a      owl:ObjectProperty .
+
+wds:Q61707895-171d6135-4081-ca8a-292f-59c279158621
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P2049       "+43"^^xsd:decimal ;
+        psn:P2049      wdv:ba14e4af12574279885deba410341389 ;
+        psv:P2049      wdv:26a22faa3201bd861de726e85d61a794 .

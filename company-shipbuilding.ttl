@@ -1,0 +1,650 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix puml:  <http://plantuml.com/ontology#> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix wdata: <https://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+
+wikibase:referenceValue
+        a       puml:InlineProperty .
+
+ps:P813  a      owl:DatatypeProperty .
+
+wdt:P131  a     owl:ObjectProperty .
+
+wd:Q18507255  a         wikibase:Item ;
+        rdfs:label      "Beaubears Island Shipbuilding"@en ;
+        schema:name     "Beaubears Island Shipbuilding"@en ;
+        skos:prefLabel  "Beaubears Island Shipbuilding"@en ;
+        p:P131          wds:Q18507255-6b97f397-4db7-d039-0b49-4e16711775a7 ;
+        p:P1435         wds:Q18507255-0f0a1060-4af6-4c3e-5099-3c36f7633252 ;
+        p:P17           wds:Q18507255-a6bf7cfd-42a3-1bac-2d34-6fd56c52daa5 ;
+        p:P2526         wds:Q18507255-58a08f45-41b1-524c-e74b-89b2e993b7c4 ;
+        p:P31           wds:Q18507255-b8dabf97-4221-815e-7690-0be28f3c3c05 ;
+        p:P477          wds:Q18507255-035f5c10-4142-52b4-c380-86c238341229 ;
+        p:P625          wds:Q18507255-ad667936-48fe-d337-92ee-64a9226d8720 ;
+        p:P706          wds:Q18507255-1BBC84EA-852E-4416-9F98-E4377761C5F7 ;
+        wdt:P131        wd:Q3365808 ;
+        wdt:P1435       wd:Q1568567 ;
+        wdt:P17         wd:Q16 ;
+        wdt:P2526       "1978" ;
+        wdt:P31         wd:Q190928 ;
+        wdt:P477        "7650" ;
+        wdt:P625        "Point(-65.563557 46.977)"^^geo:wktLiteral ;
+        wdt:P706        wd:Q3593024 .
+
+prv:P248  a     owl:ObjectProperty .
+
+psv:P813  a     owl:ObjectProperty .
+
+wds:Q18507255-6b97f397-4db7-d039-0b49-4e16711775a7
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P131        wd:Q3365808 .
+
+wd:Q3456275  a              wikibase:Item ;
+        rdfs:label          "Canadian Register of Historic Places"@en ;
+        schema:description  "federal list of historic sites of Canada"@en ;
+        schema:name         "Canadian Register of Historic Places"@en ;
+        skos:prefLabel      "Canadian Register of Historic Places"@en .
+
+psv:P31  a      owl:ObjectProperty .
+
+pq:P625  a      owl:DatatypeProperty .
+
+wd:P2526  a                             wikibase:Property ;
+        rdfs:label                      "National Historic Sites of Canada ID"@en ;
+        schema:name                     "National Historic Sites of Canada ID"@en ;
+        wikibase:claim                  p:P2526 ;
+        wikibase:directClaim            wdt:P2526 ;
+        wikibase:directClaimNormalized  wdtn:P2526 ;
+        wikibase:novalue                wdno:P2526 ;
+        wikibase:propertyType           wikibase:ExternalId ;
+        wikibase:qualifier              pq:P2526 ;
+        wikibase:qualifierValue         pqv:P2526 ;
+        wikibase:qualifierValueNormalized
+                pqn:P2526 ;
+        wikibase:reference              pr:P2526 ;
+        wikibase:referenceValue         prv:P2526 ;
+        wikibase:referenceValueNormalized
+                prn:P2526 ;
+        wikibase:statementProperty      ps:P2526 ;
+        wikibase:statementValue         psv:P2526 ;
+        wikibase:statementValueNormalized
+                psn:P2526 ;
+        skos:prefLabel                  "National Historic Sites of Canada ID"@en .
+
+wdt:P2526  a    owl:DatatypeProperty .
+
+wd:Q1568567  a              wikibase:Item ;
+        rdfs:label          "national historic site of Canada"@en ;
+        schema:description  "site of national historic significance in Canada"@en ;
+        schema:name         "national historic site of Canada"@en ;
+        skos:prefLabel      "national historic site of Canada"@en .
+
+wikibase:reference  a  puml:InlineProperty .
+
+prv:P2526  a    owl:ObjectProperty .
+
+cc:license  a   puml:InlineProperty .
+
+wd:P31  a                           wikibase:Property ;
+        rdfs:label                  "instance of"@en ;
+        schema:name                 "instance of"@en ;
+        wikibase:claim              p:P31 ;
+        wikibase:directClaim        wdt:P31 ;
+        wikibase:novalue            wdno:P31 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P31 ;
+        wikibase:qualifierValue     pqv:P31 ;
+        wikibase:reference          pr:P31 ;
+        wikibase:referenceValue     prv:P31 ;
+        wikibase:statementProperty  ps:P31 ;
+        wikibase:statementValue     psv:P31 ;
+        skos:prefLabel              "instance of"@en .
+
+pr:P1435  a     owl:ObjectProperty .
+
+wd:P813  a                          wikibase:Property ;
+        rdfs:label                  "retrieved"@en ;
+        schema:name                 "retrieved"@en ;
+        wikibase:claim              p:P813 ;
+        wikibase:directClaim        wdt:P813 ;
+        wikibase:novalue            wdno:P813 ;
+        wikibase:propertyType       wikibase:Time ;
+        wikibase:qualifier          pq:P813 ;
+        wikibase:qualifierValue     pqv:P813 ;
+        wikibase:reference          pr:P813 ;
+        wikibase:referenceValue     prv:P813 ;
+        wikibase:statementProperty  ps:P813 ;
+        wikibase:statementValue     psv:P813 ;
+        skos:prefLabel              "retrieved"@en .
+
+wds:Q18507255-b8dabf97-4221-815e-7690-0be28f3c3c05
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P31         wd:Q190928 .
+
+wds:Q18507255-035f5c10-4142-52b4-c380-86c238341229
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P477        "7650" .
+
+prv:P477  a     owl:ObjectProperty .
+
+pqv:P813  a     owl:ObjectProperty .
+
+wdv:c40f176ba43b1b95368bc9576eee6fb1
+        a                           wikibase:TimeValue ;
+        wikibase:timeCalendarModel  wd:Q1985727 ;
+        wikibase:timePrecision      11 ;
+        wikibase:timeTimezone       0 ;
+        wikibase:timeValue          "2002-02-21T00:00:00Z"^^xsd:dateTime .
+
+prv:P17  a      owl:ObjectProperty .
+
+prv:P790  a     owl:ObjectProperty .
+
+wdtn:P2526  a   owl:ObjectProperty .
+
+prv:P706  a     owl:ObjectProperty .
+
+wikibase:statementProperty
+        a       puml:InlineProperty .
+
+wdno:P131  a    owl:Class .
+
+pqn:P2526  a    owl:ObjectProperty .
+
+p:P813  a       owl:ObjectProperty .
+
+ps:P248  a      owl:ObjectProperty .
+
+pr:P813  a      owl:DatatypeProperty .
+
+p:P31   a       owl:ObjectProperty .
+
+prn:P2526  a    owl:ObjectProperty .
+
+pqv:P1435  a    owl:ObjectProperty .
+
+prn:P477  a     owl:ObjectProperty .
+
+psv:P248  a     owl:ObjectProperty .
+
+pq:P131  a      owl:ObjectProperty .
+
+prv:P580  a     owl:ObjectProperty .
+
+wds:Q18507255-1BBC84EA-852E-4416-9F98-E4377761C5F7
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P706        wd:Q3593024 .
+
+ps:P477  a      owl:DatatypeProperty .
+
+wd:P248  a                          wikibase:Property ;
+        rdfs:label                  "stated in"@en ;
+        schema:name                 "stated in"@en ;
+        wikibase:claim              p:P248 ;
+        wikibase:directClaim        wdt:P248 ;
+        wikibase:novalue            wdno:P248 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P248 ;
+        wikibase:qualifierValue     pqv:P248 ;
+        wikibase:reference          pr:P248 ;
+        wikibase:referenceValue     prv:P248 ;
+        wikibase:statementProperty  ps:P248 ;
+        wikibase:statementValue     psv:P248 ;
+        skos:prefLabel              "stated in"@en .
+
+wdt:P17  a      owl:ObjectProperty .
+
+ps:P790  a      owl:ObjectProperty .
+
+wdt:P813  a     owl:DatatypeProperty .
+
+pqv:P248  a     owl:ObjectProperty .
+
+psv:P477  a     owl:ObjectProperty .
+
+psv:P790  a     owl:ObjectProperty .
+
+ps:P706  a      owl:ObjectProperty .
+
+pr:P2526  a     owl:DatatypeProperty .
+
+psv:P706  a     owl:ObjectProperty .
+
+prv:P625  a     owl:ObjectProperty .
+
+wikibase:statementValue
+        a       puml:InlineProperty .
+
+pqv:P17  a      owl:ObjectProperty .
+
+pq:P17  a       owl:ObjectProperty .
+
+wd:Q2986567  a          wikibase:Item ;
+        rdfs:label      "Historic Sites and Monuments Board of Canada"@en ;
+        schema:name     "Historic Sites and Monuments Board of Canada"@en ;
+        skos:prefLabel  "Historic Sites and Monuments Board of Canada"@en .
+
+wd:P477  a                              wikibase:Property ;
+        rdfs:label                      "Canadian Register of Historic Places ID"@en ;
+        schema:name                     "Canadian Register of Historic Places ID"@en ;
+        wikibase:claim                  p:P477 ;
+        wikibase:directClaim            wdt:P477 ;
+        wikibase:directClaimNormalized  wdtn:P477 ;
+        wikibase:novalue                wdno:P477 ;
+        wikibase:propertyType           wikibase:ExternalId ;
+        wikibase:qualifier              pq:P477 ;
+        wikibase:qualifierValue         pqv:P477 ;
+        wikibase:qualifierValueNormalized
+                pqn:P477 ;
+        wikibase:reference              pr:P477 ;
+        wikibase:referenceValue         prv:P477 ;
+        wikibase:referenceValueNormalized
+                prn:P477 ;
+        wikibase:statementProperty      ps:P477 ;
+        wikibase:statementValue         psv:P477 ;
+        wikibase:statementValueNormalized
+                psn:P477 ;
+        skos:prefLabel                  "Canadian Register of Historic Places ID"@en .
+
+wds:Q18507255-0f0a1060-4af6-4c3e-5099-3c36f7633252
+        a                    wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank        wikibase:NormalRank ;
+        prov:wasDerivedFrom  wdref:3cde18bfecf4997e1a5cd18f672437a7824d1ba0 ;
+        pq:P580              "2002-02-21T00:00:00Z"^^xsd:dateTime ;
+        pq:P790              wd:Q2986567 ;
+        pqv:P580             wdv:c40f176ba43b1b95368bc9576eee6fb1 ;
+        ps:P1435             wd:Q1568567 .
+
+wd:P790  a                          wikibase:Property ;
+        rdfs:label                  "approved by"@en ;
+        schema:name                 "approved by"@en ;
+        wikibase:claim              p:P790 ;
+        wikibase:directClaim        wdt:P790 ;
+        wikibase:novalue            wdno:P790 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P790 ;
+        wikibase:qualifierValue     pqv:P790 ;
+        wikibase:reference          pr:P790 ;
+        wikibase:referenceValue     prv:P790 ;
+        wikibase:statementProperty  ps:P790 ;
+        wikibase:statementValue     psv:P790 ;
+        skos:prefLabel              "approved by"@en .
+
+pqv:P477  a     owl:ObjectProperty .
+
+pqv:P790  a     owl:ObjectProperty .
+
+wd:Q16  a                   wikibase:Item , puml:Inline ;
+        rdfs:label          "Canada"@en ;
+        schema:description  "country in North America"@en ;
+        schema:name         "Canada"@en ;
+        skos:prefLabel      "Canada"@en .
+
+p:P248  a       owl:ObjectProperty .
+
+wd:P706  a                          wikibase:Property ;
+        rdfs:label                  "located on terrain feature"@en ;
+        schema:name                 "located on terrain feature"@en ;
+        wikibase:claim              p:P706 ;
+        wikibase:directClaim        wdt:P706 ;
+        wikibase:novalue            wdno:P706 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P706 ;
+        wikibase:qualifierValue     pqv:P706 ;
+        wikibase:reference          pr:P706 ;
+        wikibase:referenceValue     prv:P706 ;
+        wikibase:statementProperty  ps:P706 ;
+        wikibase:statementValue     psv:P706 ;
+        skos:prefLabel              "located on terrain feature"@en .
+
+pr:P248  a      owl:ObjectProperty .
+
+wd:Q5   a       puml:Inline .
+
+wikibase:claim  a  puml:InlineProperty .
+
+pqv:P706  a     owl:ObjectProperty .
+
+wikibase:rank  a  puml:InlineProperty .
+
+p:P1435  a      owl:ObjectProperty .
+
+prv:P31  a      owl:ObjectProperty .
+
+wikibase:statementValueNormalized
+        a       puml:InlineProperty .
+
+wdno:P813  a    owl:Class .
+
+ps:P580  a      owl:DatatypeProperty .
+
+pqv:P2526  a    owl:ObjectProperty .
+
+wds:Q18507255-ad667936-48fe-d337-92ee-64a9226d8720
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P625        "Point(-65.563557 46.977)"^^geo:wktLiteral ;
+        psv:P625       wdv:fb2e4618f4f073897cf458c533ccb41a .
+
+psv:P580  a     owl:ObjectProperty .
+
+p:P477  a       owl:ObjectProperty .
+
+pr:P477  a      owl:DatatypeProperty .
+
+wdtn:P477  a    owl:ObjectProperty .
+
+p:P790  a       owl:ObjectProperty .
+
+wdt:P248  a     owl:ObjectProperty .
+
+pr:P790  a      owl:ObjectProperty .
+
+wikibase:qualifier  a  puml:InlineProperty .
+
+psv:P1435  a    owl:ObjectProperty .
+
+p:P706  a       owl:ObjectProperty .
+
+prv:P131  a     owl:ObjectProperty .
+
+pr:P706  a      owl:ObjectProperty .
+
+psn:P477  a     owl:ObjectProperty .
+
+pq:P813  a      owl:DatatypeProperty .
+
+ps:P625  a      owl:DatatypeProperty .
+
+wd:P580  a                          wikibase:Property ;
+        rdfs:label                  "start time"@en ;
+        schema:name                 "start time"@en ;
+        wikibase:claim              p:P580 ;
+        wikibase:directClaim        wdt:P580 ;
+        wikibase:novalue            wdno:P580 ;
+        wikibase:propertyType       wikibase:Time ;
+        wikibase:qualifier          pq:P580 ;
+        wikibase:qualifierValue     pqv:P580 ;
+        wikibase:reference          pr:P580 ;
+        wikibase:referenceValue     prv:P580 ;
+        wikibase:statementProperty  ps:P580 ;
+        wikibase:statementValue     psv:P580 ;
+        skos:prefLabel              "start time"@en .
+
+wdno:P1435  a   owl:Class .
+
+pqv:P580  a     owl:ObjectProperty .
+
+ps:P17  a       owl:ObjectProperty .
+
+psv:P625  a     owl:ObjectProperty .
+
+ps:P1435  a     owl:ObjectProperty .
+
+wdt:P477  a     owl:DatatypeProperty .
+
+wdt:P790  a     owl:ObjectProperty .
+
+psn:P2526  a    owl:ObjectProperty .
+
+wdno:P17  a     owl:Class .
+
+wd:Q190928  a               wikibase:Item ;
+        rdfs:label          "shipyard"@en ;
+        schema:description  "place where ships are repaired and built"@en ;
+        schema:name         "shipyard"@en ;
+        skos:prefLabel      "shipyard"@en .
+
+wdt:P706  a     owl:ObjectProperty .
+
+wd:P625  a                          wikibase:Property ;
+        rdfs:label                  "coordinate location"@en ;
+        schema:name                 "coordinate location"@en ;
+        wikibase:claim              p:P625 ;
+        wikibase:directClaim        wdt:P625 ;
+        wikibase:novalue            wdno:P625 ;
+        wikibase:propertyType       wikibase:GlobeCoordinate ;
+        wikibase:qualifier          pq:P625 ;
+        wikibase:qualifierValue     pqv:P625 ;
+        wikibase:reference          pr:P625 ;
+        wikibase:referenceValue     prv:P625 ;
+        wikibase:statementProperty  ps:P625 ;
+        wikibase:statementValue     psv:P625 ;
+        skos:prefLabel              "coordinate location"@en .
+
+pr:P17  a       owl:ObjectProperty .
+
+wdt:P31  a      owl:ObjectProperty .
+
+pqv:P625  a     owl:ObjectProperty .
+
+wikibase:propertyType
+        a       puml:InlineProperty .
+
+wdv:dfeba5f95a1e7420a46095102eac7395
+        a                           wikibase:TimeValue ;
+        wikibase:timeCalendarModel  wd:Q1985727 ;
+        wikibase:timePrecision      11 ;
+        wikibase:timeTimezone       0 ;
+        wikibase:timeValue          "2014-11-05T00:00:00Z"^^xsd:dateTime .
+
+wikibase:qualifierValueNormalized
+        a       puml:InlineProperty .
+
+wdno:P248  a    owl:Class .
+
+p:P580  a       owl:ObjectProperty .
+
+pr:P580  a      owl:DatatypeProperty .
+
+wdata:Q18507255  a              schema:Dataset ;
+        cc:license              <http://creativecommons.org/publicdomain/zero/1.0/> ;
+        schema:about            wd:Q18507255 ;
+        schema:dateModified     "2019-01-21T16:37:52Z"^^xsd:dateTime ;
+        schema:softwareVersion  "1.0.0" ;
+        schema:version          839077997 ;
+        wikibase:identifiers    2 ;
+        wikibase:sitelinks      0 ;
+        wikibase:statements     8 .
+
+pq:P1435  a     owl:ObjectProperty .
+
+pqn:P477  a     owl:ObjectProperty .
+
+wikibase:novalue  a  puml:InlineProperty .
+
+wd:Q3365808  a              wikibase:Item ;
+        rdfs:label          "Derby Parish"@en ;
+        schema:description  "parish in New Brunswick, Canada"@en ;
+        schema:name         "Derby Parish"@en ;
+        skos:prefLabel      "Derby Parish"@en .
+
+p:P2526  a      owl:ObjectProperty .
+
+pq:P31  a       owl:ObjectProperty .
+
+pqv:P31  a      owl:ObjectProperty .
+
+wdref:3cde18bfecf4997e1a5cd18f672437a7824d1ba0
+        a         wikibase:Reference ;
+        pr:P248   wd:Q3456275 ;
+        pr:P477   "7650" ;
+        pr:P813   "2014-11-05T00:00:00Z"^^xsd:dateTime ;
+        prv:P813  wdv:dfeba5f95a1e7420a46095102eac7395 .
+
+ps:P131  a      owl:ObjectProperty .
+
+psv:P17  a      owl:ObjectProperty .
+
+wdno:P477  a    owl:Class .
+
+p:P625  a       owl:ObjectProperty .
+
+psv:P131  a     owl:ObjectProperty .
+
+pq:P248  a      owl:ObjectProperty .
+
+pr:P625  a      owl:DatatypeProperty .
+
+wikibase:directClaimNormalized
+        a       puml:InlineProperty .
+
+wdno:P790  a    owl:Class .
+
+wdt:P580  a     owl:DatatypeProperty .
+
+wdv:fb2e4618f4f073897cf458c533ccb41a
+        a                      wikibase:GlobecoordinateValue ;
+        wikibase:geoGlobe      wd:Q2 ;
+        wikibase:geoLatitude   "46.977"^^xsd:double ;
+        wikibase:geoLongitude  "-65.563557"^^xsd:double ;
+        wikibase:geoPrecision  1.0E-6 .
+
+wd:P17  a                           wikibase:Property ;
+        rdfs:label                  "country"@en ;
+        schema:name                 "country"@en ;
+        wikibase:claim              p:P17 ;
+        wikibase:directClaim        wdt:P17 ;
+        wikibase:novalue            wdno:P17 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P17 ;
+        wikibase:qualifierValue     pqv:P17 ;
+        wikibase:reference          pr:P17 ;
+        wikibase:referenceValue     prv:P17 ;
+        wikibase:statementProperty  ps:P17 ;
+        wikibase:statementValue     psv:P17 ;
+        skos:prefLabel              "country"@en .
+
+wdno:P706  a    owl:Class .
+
+psv:P2526  a    owl:ObjectProperty .
+
+wikibase:directClaim  a  puml:InlineProperty .
+
+wdno:P2526  a   owl:Class .
+
+wd:Q3593024  a              wikibase:Item ;
+        rdfs:label          "Beaubears Island"@en ;
+        schema:description  "human settlement in Canada"@en ;
+        schema:name         "Beaubears Island"@en ;
+        skos:prefLabel      "Beaubears Island"@en .
+
+wd:P131  a                          wikibase:Property ;
+        rdfs:label                  "located in the administrative territorial entity"@en ;
+        schema:name                 "located in the administrative territorial entity"@en ;
+        wikibase:claim              p:P131 ;
+        wikibase:directClaim        wdt:P131 ;
+        wikibase:novalue            wdno:P131 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P131 ;
+        wikibase:qualifierValue     pqv:P131 ;
+        wikibase:reference          pr:P131 ;
+        wikibase:referenceValue     prv:P131 ;
+        wikibase:statementProperty  ps:P131 ;
+        wikibase:statementValue     psv:P131 ;
+        skos:prefLabel              "located in the administrative territorial entity"@en .
+
+wds:Q18507255-58a08f45-41b1-524c-e74b-89b2e993b7c4
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P2526       "1978" .
+
+pqv:P131  a     owl:ObjectProperty .
+
+prv:P813  a     owl:ObjectProperty .
+
+wd:P1435  a                         wikibase:Property ;
+        rdfs:label                  "heritage designation"@en ;
+        schema:name                 "heritage designation"@en ;
+        wikibase:claim              p:P1435 ;
+        wikibase:directClaim        wdt:P1435 ;
+        wikibase:novalue            wdno:P1435 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P1435 ;
+        wikibase:qualifierValue     pqv:P1435 ;
+        wikibase:reference          pr:P1435 ;
+        wikibase:referenceValue     prv:P1435 ;
+        wikibase:statementProperty  ps:P1435 ;
+        wikibase:statementValue     psv:P1435 ;
+        skos:prefLabel              "heritage designation"@en .
+
+pq:P477  a      owl:DatatypeProperty .
+
+pr:P854  a      puml:InlineProperty .
+
+wdt:P1435  a    owl:ObjectProperty .
+
+ps:P2526  a     owl:DatatypeProperty .
+
+wikibase:referenceValueNormalized
+        a       puml:InlineProperty .
+
+prv:P1435  a    owl:ObjectProperty .
+
+pq:P790  a      owl:ObjectProperty .
+
+wdt:P625  a     owl:DatatypeProperty .
+
+wikibase:timeCalendarModel
+        a       puml:InlineProperty .
+
+pq:P706  a      owl:ObjectProperty .
+
+ps:P31  a       owl:ObjectProperty .
+
+wikibase:qualifierValue
+        a       puml:InlineProperty .
+
+p:P17   a       owl:ObjectProperty .
+
+wdno:P580  a    owl:Class .
+
+pq:P2526  a     owl:DatatypeProperty .
+
+p:P131  a       owl:ObjectProperty .
+
+pr:P131  a      owl:ObjectProperty .
+
+wdno:P31  a     owl:Class .
+
+pr:P31  a       owl:ObjectProperty .
+
+wdno:P625  a    owl:Class .
+
+pq:P580  a      owl:DatatypeProperty .
+
+wds:Q18507255-a6bf7cfd-42a3-1bac-2d34-6fd56c52daa5
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P17         wd:Q16 .

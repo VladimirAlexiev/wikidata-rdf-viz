@@ -1,0 +1,355 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix puml:  <http://plantuml.com/ontology#> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix wdata: <https://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+
+pq:P585  a      owl:DatatypeProperty .
+
+cc:license  a   puml:InlineProperty .
+
+psv:P31  a      owl:ObjectProperty .
+
+wd:Q18507255  a         wikibase:Item ;
+        rdfs:label      "Beaubears Island Shipbuilding"@en ;
+        schema:name     "Beaubears Island Shipbuilding"@en ;
+        skos:prefLabel  "Beaubears Island Shipbuilding"@en .
+
+pqv:P31  a      owl:ObjectProperty .
+
+prv:P854  a     owl:ObjectProperty .
+
+pr:P108  a      owl:ObjectProperty .
+
+wd:P108  a                          wikibase:Property ;
+        rdfs:label                  "employer"@en ;
+        schema:name                 "employer"@en ;
+        wikibase:claim              p:P108 ;
+        wikibase:directClaim        wdt:P108 ;
+        wikibase:novalue            wdno:P108 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P108 ;
+        wikibase:qualifierValue     pqv:P108 ;
+        wikibase:reference          pr:P108 ;
+        wikibase:referenceValue     prv:P108 ;
+        wikibase:statementProperty  ps:P108 ;
+        wikibase:statementValue     psv:P108 ;
+        skos:prefLabel              "employer"@en .
+
+prv:P27  a      owl:ObjectProperty .
+
+wikibase:timeCalendarModel
+        a       puml:InlineProperty .
+
+wdv:81a3e72fc2456b38491077cdeef9ff11
+        a                           wikibase:TimeValue ;
+        wikibase:timeCalendarModel  wd:Q1985727 ;
+        wikibase:timePrecision      7 ;
+        wikibase:timeTimezone       0 ;
+        wikibase:timeValue          "1900-01-01T00:00:00Z"^^xsd:dateTime .
+
+ps:P31  a       owl:ObjectProperty .
+
+p:P854  a       owl:ObjectProperty .
+
+wds:Q61708013-06085b0e-49db-0d65-f517-7cdf02a2de88
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P31         wd:Q5 .
+
+psv:P585  a     owl:ObjectProperty .
+
+wikibase:qualifierValue
+        a       puml:InlineProperty .
+
+wdata:Q61708013  a              schema:Dataset ;
+        cc:license              <http://creativecommons.org/publicdomain/zero/1.0/> ;
+        schema:about            wd:Q61708013 ;
+        schema:dateModified     "2019-02-12T16:32:42Z"^^xsd:dateTime ;
+        schema:softwareVersion  "1.0.0" ;
+        schema:version          856728238 ;
+        wikibase:identifiers    0 ;
+        wikibase:sitelinks      0 ;
+        wikibase:statements     4 .
+
+wdref:48e035e2f7a858dbedf7045695b2427ef5e020b1
+        a        wikibase:Reference ;
+        pr:P854  <https://app.pch.gc.ca/application/artefacts_hum/detailler_detail.app?d=AEISFOB+2011.16.4&w=&t=0&i=false&n=0&p=a&o=&f=&k=&pID=1&r=10&s=1&in=Beaubears+Island+Interpretive+Centre+%26+Museum&colId=&v=none&l=l&lang=en> .
+
+prv:P106  a     owl:ObjectProperty .
+
+wdno:P31  a     owl:Class .
+
+pq:P108  a      owl:ObjectProperty .
+
+wd:Q61708013  a             wikibase:Item ;
+        rdfs:label          "Murtagh Carroll"@en ;
+        schema:description  "19C shipbuilder on Beaubears Island"@en ;
+        schema:name         "Murtagh Carroll"@en ;
+        skos:altLabel       "Mutt Carroll"@en , "Mert Carroll"@en ;
+        skos:prefLabel      "Murtagh Carroll"@en ;
+        p:P106              wds:Q61708013-e35ae62a-41c1-f1ef-bf92-024ca7a83d77 ;
+        p:P108              wds:Q61708013-c756838a-499b-5217-9b01-7234a095bf14 ;
+        p:P27               wds:Q61708013-98df5fdd-4c6d-40ae-1782-13b0e4e5507f ;
+        p:P31               wds:Q61708013-06085b0e-49db-0d65-f517-7cdf02a2de88 ;
+        wdt:P106            wd:Q2106711 ;
+        wdt:P108            wd:Q18507255 ;
+        wdt:P27             wd:Q16 ;
+        wdt:P31             wd:Q5 .
+
+ps:P585  a      owl:DatatypeProperty .
+
+wikibase:claim  a  puml:InlineProperty .
+
+pr:P854  a      owl:ObjectProperty , puml:InlineProperty .
+
+wikibase:referenceValue
+        a       puml:InlineProperty .
+
+wd:P854  a                          wikibase:Property ;
+        rdfs:label                  "reference URL"@en ;
+        schema:name                 "reference URL"@en ;
+        wikibase:claim              p:P854 ;
+        wikibase:directClaim        wdt:P854 ;
+        wikibase:novalue            wdno:P854 ;
+        wikibase:propertyType       wikibase:Url ;
+        wikibase:qualifier          pq:P854 ;
+        wikibase:qualifierValue     pqv:P854 ;
+        wikibase:reference          pr:P854 ;
+        wikibase:referenceValue     prv:P854 ;
+        wikibase:statementProperty  ps:P854 ;
+        wikibase:statementValue     psv:P854 ;
+        skos:prefLabel              "reference URL"@en .
+
+wd:Q5   a                   wikibase:Item , puml:Inline ;
+        rdfs:label          "human"@en ;
+        schema:description  "common name of Homo sapiens, unique extant species of the genus Homo"@en ;
+        schema:name         "human"@en ;
+        skos:prefLabel      "human"@en .
+
+pqv:P585  a     owl:ObjectProperty .
+
+p:P106  a       owl:ObjectProperty .
+
+wikibase:directClaimNormalized
+        a       puml:InlineProperty .
+
+wdt:P585  a     owl:DatatypeProperty .
+
+wikibase:statementValueNormalized
+        a       puml:InlineProperty .
+
+wikibase:reference  a  puml:InlineProperty .
+
+pq:P31  a       owl:ObjectProperty .
+
+wdno:P585  a    owl:Class .
+
+wdt:P31  a      owl:ObjectProperty .
+
+wd:Q16  a                   wikibase:Item , puml:Inline ;
+        rdfs:label          "Canada"@en ;
+        schema:description  "country in North America"@en ;
+        schema:name         "Canada"@en ;
+        skos:prefLabel      "Canada"@en .
+
+p:P27   a       owl:ObjectProperty .
+
+pr:P31  a       owl:ObjectProperty .
+
+wd:P31  a                           wikibase:Property ;
+        rdfs:label                  "instance of"@en ;
+        schema:name                 "instance of"@en ;
+        wikibase:claim              p:P31 ;
+        wikibase:directClaim        wdt:P31 ;
+        wikibase:novalue            wdno:P31 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P31 ;
+        wikibase:qualifierValue     pqv:P31 ;
+        wikibase:reference          pr:P31 ;
+        wikibase:referenceValue     prv:P31 ;
+        wikibase:statementProperty  ps:P31 ;
+        wikibase:statementValue     psv:P31 ;
+        skos:prefLabel              "instance of"@en .
+
+wikibase:novalue  a  puml:InlineProperty .
+
+psv:P108  a     owl:ObjectProperty .
+
+psv:P27  a      owl:ObjectProperty .
+
+pq:P854  a      owl:ObjectProperty .
+
+wikibase:statementValue
+        a       puml:InlineProperty .
+
+pqv:P27  a      owl:ObjectProperty .
+
+pr:P106  a      owl:ObjectProperty .
+
+wikibase:qualifier  a  puml:InlineProperty .
+
+wd:Q2106711  a              wikibase:Item ;
+        rdfs:label          "shipbuilder"@en ;
+        schema:description  "person who builds ships"@en ;
+        schema:name         "shipbuilder"@en ;
+        skos:prefLabel      "shipbuilder"@en .
+
+wd:P106  a                          wikibase:Property ;
+        rdfs:label                  "occupation"@en ;
+        schema:name                 "occupation"@en ;
+        wikibase:claim              p:P106 ;
+        wikibase:directClaim        wdt:P106 ;
+        wikibase:novalue            wdno:P106 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P106 ;
+        wikibase:qualifierValue     pqv:P106 ;
+        wikibase:reference          pr:P106 ;
+        wikibase:referenceValue     prv:P106 ;
+        wikibase:statementProperty  ps:P106 ;
+        wikibase:statementValue     psv:P106 ;
+        skos:prefLabel              "occupation"@en .
+
+ps:P108  a      owl:ObjectProperty .
+
+ps:P27  a       owl:ObjectProperty .
+
+pqv:P108  a     owl:ObjectProperty .
+
+wdt:P108  a     owl:ObjectProperty .
+
+pq:P106  a      owl:ObjectProperty .
+
+psv:P854  a     owl:ObjectProperty .
+
+wdno:P108  a    owl:Class .
+
+wdno:P27  a     owl:Class .
+
+prv:P585  a     owl:ObjectProperty .
+
+wds:Q61708013-e35ae62a-41c1-f1ef-bf92-024ca7a83d77
+        a                    wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank        wikibase:NormalRank ;
+        prov:wasDerivedFrom  wdref:48e035e2f7a858dbedf7045695b2427ef5e020b1 ;
+        ps:P106              wd:Q2106711 .
+
+wds:Q61708013-c756838a-499b-5217-9b01-7234a095bf14
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        pq:P585        "1900-01-01T00:00:00Z"^^xsd:dateTime ;
+        pqv:P585       wdv:81a3e72fc2456b38491077cdeef9ff11 ;
+        ps:P108        wd:Q18507255 .
+
+ps:P854  a      owl:ObjectProperty .
+
+prv:P31  a      owl:ObjectProperty .
+
+p:P585  a       owl:ObjectProperty .
+
+pqv:P854  a     owl:ObjectProperty .
+
+wds:Q61708013-98df5fdd-4c6d-40ae-1782-13b0e4e5507f
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P27         wd:Q16 .
+
+pq:P27  a       owl:ObjectProperty .
+
+psv:P106  a     owl:ObjectProperty .
+
+wdt:P27  a      owl:ObjectProperty .
+
+wdt:P854  a     owl:ObjectProperty .
+
+pr:P27  a       owl:ObjectProperty .
+
+wd:P27  a                           wikibase:Property ;
+        rdfs:label                  "country of citizenship"@en ;
+        schema:name                 "country of citizenship"@en ;
+        wikibase:claim              p:P27 ;
+        wikibase:directClaim        wdt:P27 ;
+        wikibase:novalue            wdno:P27 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P27 ;
+        wikibase:qualifierValue     pqv:P27 ;
+        wikibase:reference          pr:P27 ;
+        wikibase:referenceValue     prv:P27 ;
+        wikibase:statementProperty  ps:P27 ;
+        wikibase:statementValue     psv:P27 ;
+        skos:prefLabel              "country of citizenship"@en .
+
+wikibase:rank  a  puml:InlineProperty .
+
+wdno:P854  a    owl:Class .
+
+wikibase:directClaim  a  puml:InlineProperty .
+
+pr:P585  a      owl:DatatypeProperty .
+
+ps:P106  a      owl:ObjectProperty .
+
+wikibase:referenceValueNormalized
+        a       puml:InlineProperty .
+
+wd:P585  a                          wikibase:Property ;
+        rdfs:label                  "point in time"@en ;
+        schema:name                 "point in time"@en ;
+        wikibase:claim              p:P585 ;
+        wikibase:directClaim        wdt:P585 ;
+        wikibase:novalue            wdno:P585 ;
+        wikibase:propertyType       wikibase:Time ;
+        wikibase:qualifier          pq:P585 ;
+        wikibase:qualifierValue     pqv:P585 ;
+        wikibase:reference          pr:P585 ;
+        wikibase:referenceValue     prv:P585 ;
+        wikibase:statementProperty  ps:P585 ;
+        wikibase:statementValue     psv:P585 ;
+        skos:prefLabel              "point in time"@en .
+
+wikibase:statementProperty
+        a       puml:InlineProperty .
+
+prv:P108  a     owl:ObjectProperty .
+
+pqv:P106  a     owl:ObjectProperty .
+
+wikibase:propertyType
+        a       puml:InlineProperty .
+
+wdt:P106  a     owl:ObjectProperty .
+
+wdno:P106  a    owl:Class .
+
+p:P108  a       owl:ObjectProperty .
+
+wikibase:qualifierValueNormalized
+        a       puml:InlineProperty .
+
+p:P31   a       owl:ObjectProperty .

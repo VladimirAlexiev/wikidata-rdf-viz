@@ -1,0 +1,827 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix puml:  <http://plantuml.com/ontology#> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix wdata: <https://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+
+p:P1810  a      owl:ObjectProperty .
+
+wikibase:referenceValue
+        a       puml:InlineProperty .
+
+ps:P813  a      owl:DatatypeProperty .
+
+prv:P106  a     owl:ObjectProperty .
+
+prv:P248  a     owl:ObjectProperty .
+
+psv:P813  a     owl:ObjectProperty .
+
+wdv:d2286155bf180ae2a1a26480f81d9168
+        a                           wikibase:TimeValue ;
+        wikibase:timeCalendarModel  wd:Q1985727 ;
+        wikibase:timePrecision      9 ;
+        wikibase:timeTimezone       0 ;
+        wikibase:timeValue          "1951-01-01T00:00:00Z"^^xsd:dateTime .
+
+psv:P31  a      owl:ObjectProperty .
+
+wdno:P854  a    owl:Class .
+
+prn:P5239  a    owl:ObjectProperty .
+
+wdt:P19  a      owl:ObjectProperty .
+
+wds:Q55218544-d05e6251-4ef2-ea19-0a6c-97d650c23f58
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P27         wd:Q16 .
+
+wd:Q483501  a               wikibase:Item ;
+        rdfs:label          "artist"@en ;
+        schema:description  "person who creates, practises and/or demonstrates any art"@en ;
+        schema:name         "artist"@en ;
+        skos:prefLabel      "artist"@en .
+
+psv:P5239  a    owl:ObjectProperty .
+
+wikibase:reference  a  puml:InlineProperty .
+
+ps:P21  a       owl:ObjectProperty .
+
+cc:license  a   puml:InlineProperty .
+
+prv:P569  a     owl:ObjectProperty .
+
+pr:P4656  a     owl:ObjectProperty .
+
+psv:P1810  a    owl:ObjectProperty .
+
+pr:P6379  a     owl:ObjectProperty .
+
+wds:Q55218544-a40e362e-4c43-3172-0989-168b6922a4f8
+        a                    wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank        wikibase:NormalRank ;
+        prov:wasDerivedFrom  wdref:5da6646f7f1b41efa8ae53c1364bff5558cc7c50 ;
+        ps:P106              wd:Q1281618 .
+
+wd:P31  a                           wikibase:Property ;
+        rdfs:label                  "instance of"@en ;
+        schema:name                 "instance of"@en ;
+        wikibase:claim              p:P31 ;
+        wikibase:directClaim        wdt:P31 ;
+        wikibase:novalue            wdno:P31 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P31 ;
+        wikibase:qualifierValue     pqv:P31 ;
+        wikibase:reference          pr:P31 ;
+        wikibase:referenceValue     prv:P31 ;
+        wikibase:statementProperty  ps:P31 ;
+        wikibase:statementValue     psv:P31 ;
+        skos:prefLabel              "instance of"@en .
+
+wdno:P5239  a   owl:Class .
+
+wd:P813  a                          wikibase:Property ;
+        rdfs:label                  "retrieved"@en ;
+        schema:name                 "retrieved"@en ;
+        wikibase:claim              p:P813 ;
+        wikibase:directClaim        wdt:P813 ;
+        wikibase:novalue            wdno:P813 ;
+        wikibase:propertyType       wikibase:Time ;
+        wikibase:qualifier          pq:P813 ;
+        wikibase:qualifierValue     pqv:P813 ;
+        wikibase:reference          pr:P813 ;
+        wikibase:referenceValue     prv:P813 ;
+        wikibase:statementProperty  ps:P813 ;
+        wikibase:statementValue     psv:P813 ;
+        skos:prefLabel              "retrieved"@en .
+
+wdt:P27  a      owl:ObjectProperty .
+
+pqv:P813  a     owl:ObjectProperty .
+
+wdno:P1810  a   owl:Class .
+
+prn:P5368  a    owl:ObjectProperty .
+
+psv:P5368  a    owl:ObjectProperty .
+
+pq:P19  a       owl:ObjectProperty .
+
+wdno:P21  a     owl:Class .
+
+pqv:P19  a      owl:ObjectProperty .
+
+wds:Q55218544-5DC5B832-9284-4A86-8E37-3BBE2CD71AFF
+        a                    wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank        wikibase:NormalRank ;
+        prov:wasDerivedFrom  wdref:91b3ffe83b47579eea249777d83ec273f1de439b ;
+        ps:P6379             wd:Q1068063 .
+
+wikibase:statementProperty
+        a       puml:InlineProperty .
+
+ps:P1810  a     owl:DatatypeProperty .
+
+wds:Q55218544-404585D7-707A-492F-92C5-5EE946F169C6
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P5239       "47459" .
+
+pr:P21  a       owl:ObjectProperty .
+
+pq:P854  a      owl:ObjectProperty .
+
+wdno:P5368  a   owl:Class .
+
+wd:Q55218544  a             wikibase:Item ;
+        rdfs:label          "Johnny Aculiak"@en ;
+        schema:description  "born 1951, lives Inukjuak, Quebec; artist"@en ;
+        schema:name         "Johnny Aculiak"@en ;
+        skos:prefLabel      "Johnny Aculiak"@en ;
+        p:P106              wds:Q55218544-3DBC352A-A096-40B8-9A8D-3E6095DCA0A8 , wds:Q55218544-a40e362e-4c43-3172-0989-168b6922a4f8 ;
+        p:P19               wds:Q55218544-182c423d-4192-6d4d-05b0-cdb7ce11c057 ;
+        p:P21               wds:Q55218544-230d5663-4cb4-6471-e373-e539de795f8f ;
+        p:P27               wds:Q55218544-d05e6251-4ef2-ea19-0a6c-97d650c23f58 ;
+        p:P31               wds:Q55218544-3F8A5CC9-2A4F-4CBE-96D6-4186734540DC ;
+        p:P5239             wds:Q55218544-404585D7-707A-492F-92C5-5EE946F169C6 ;
+        p:P5368             wds:Q55218544-5E7BF832-2377-460A-925E-6B0B0BBF6893 ;
+        p:P569              wds:Q55218544-3607875D-86EA-49F1-A22B-F534D287091B ;
+        p:P6379             wds:Q55218544-5DC5B832-9284-4A86-8E37-3BBE2CD71AFF ;
+        p:P735              wds:Q55218544-349902C1-7464-46C3-B9BD-5EECE8AEF936 ;
+        wdt:P106            wd:Q1281618 , wd:Q483501 ;
+        wdt:P19             wd:Q22639217 ;
+        wdt:P21             wd:Q6581097 ;
+        wdt:P27             wd:Q16 ;
+        wdt:P31             wd:Q5 ;
+        wdt:P5239           "47459" ;
+        wdt:P5368           "johnny-aculiak" ;
+        wdt:P569            "1951-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P6379           wd:Q1068063 ;
+        wdt:P735            wd:Q1762022 .
+
+prv:P735  a     owl:ObjectProperty .
+
+pq:P27  a       owl:ObjectProperty .
+
+pqv:P27  a      owl:ObjectProperty .
+
+pr:P5239  a     owl:DatatypeProperty .
+
+ps:P106  a      owl:ObjectProperty .
+
+p:P813  a       owl:ObjectProperty .
+
+ps:P248  a      owl:ObjectProperty .
+
+pr:P813  a      owl:DatatypeProperty .
+
+pqv:P4656  a    owl:ObjectProperty .
+
+p:P31   a       owl:ObjectProperty .
+
+p:P3452  a      owl:ObjectProperty .
+
+psv:P106  a     owl:ObjectProperty .
+
+pqv:P6379  a    owl:ObjectProperty .
+
+pq:P1810  a     owl:DatatypeProperty .
+
+psv:P248  a     owl:ObjectProperty .
+
+pr:P5368  a     owl:DatatypeProperty .
+
+psv:P21  a      owl:ObjectProperty .
+
+wd:P6379  a                         wikibase:Property ;
+        rdfs:label                  "works in collection"@en ;
+        schema:name                 "works in collection"@en ;
+        wikibase:claim              p:P6379 ;
+        wikibase:directClaim        wdt:P6379 ;
+        wikibase:novalue            wdno:P6379 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P6379 ;
+        wikibase:qualifierValue     pqv:P6379 ;
+        wikibase:reference          pr:P6379 ;
+        wikibase:referenceValue     prv:P6379 ;
+        wikibase:statementProperty  ps:P6379 ;
+        wikibase:statementValue     psv:P6379 ;
+        skos:prefLabel              "works in collection"@en .
+
+ps:P569  a      owl:DatatypeProperty .
+
+wdref:93589196c06da7881388a563515fa6f66039c114
+        a         wikibase:Reference ;
+        pr:P1810  "Johnny Aculiak" ;
+        pr:P248   wd:Q56027560 ;
+        pr:P5239  "47459" ;
+        pr:P813   "2017-10-09T00:00:00Z"^^xsd:dateTime ;
+        prv:P813  wdv:b3795d3425e0bbdd474f3138cad4a069 .
+
+wd:P21  a                           wikibase:Property ;
+        rdfs:label                  "sex or gender"@en ;
+        schema:name                 "sex or gender"@en ;
+        wikibase:claim              p:P21 ;
+        wikibase:directClaim        wdt:P21 ;
+        wikibase:novalue            wdno:P21 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P21 ;
+        wikibase:qualifierValue     pqv:P21 ;
+        wikibase:reference          pr:P21 ;
+        wikibase:referenceValue     prv:P21 ;
+        wikibase:statementProperty  ps:P21 ;
+        wikibase:statementValue     psv:P21 ;
+        skos:prefLabel              "sex or gender"@en .
+
+wd:P106  a                          wikibase:Property ;
+        rdfs:label                  "occupation"@en ;
+        schema:name                 "occupation"@en ;
+        wikibase:claim              p:P106 ;
+        wikibase:directClaim        wdt:P106 ;
+        wikibase:novalue            wdno:P106 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P106 ;
+        wikibase:qualifierValue     pqv:P106 ;
+        wikibase:reference          pr:P106 ;
+        wikibase:referenceValue     prv:P106 ;
+        wikibase:statementProperty  ps:P106 ;
+        wikibase:statementValue     psv:P106 ;
+        skos:prefLabel              "occupation"@en .
+
+psv:P569  a     owl:ObjectProperty .
+
+wd:P248  a                          wikibase:Property ;
+        rdfs:label                  "stated in"@en ;
+        schema:name                 "stated in"@en ;
+        wikibase:claim              p:P248 ;
+        wikibase:directClaim        wdt:P248 ;
+        wikibase:novalue            wdno:P248 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P248 ;
+        wikibase:qualifierValue     pqv:P248 ;
+        wikibase:reference          pr:P248 ;
+        wikibase:referenceValue     prv:P248 ;
+        wikibase:statementProperty  ps:P248 ;
+        wikibase:statementValue     psv:P248 ;
+        skos:prefLabel              "stated in"@en .
+
+pqv:P106  a     owl:ObjectProperty .
+
+psv:P3452  a    owl:ObjectProperty .
+
+wdt:P813  a     owl:DatatypeProperty .
+
+pqv:P248  a     owl:ObjectProperty .
+
+ps:P19  a       owl:ObjectProperty .
+
+pqv:P5239  a    owl:ObjectProperty .
+
+wdno:P3452  a   owl:Class .
+
+wd:P569  a                          wikibase:Property ;
+        rdfs:label                  "date of birth"@en ;
+        schema:name                 "date of birth"@en ;
+        wikibase:claim              p:P569 ;
+        wikibase:directClaim        wdt:P569 ;
+        wikibase:novalue            wdno:P569 ;
+        wikibase:propertyType       wikibase:Time ;
+        wikibase:qualifier          pq:P569 ;
+        wikibase:qualifierValue     pqv:P569 ;
+        wikibase:reference          pr:P569 ;
+        wikibase:referenceValue     prv:P569 ;
+        wikibase:statementProperty  ps:P569 ;
+        wikibase:statementValue     psv:P569 ;
+        skos:prefLabel              "date of birth"@en .
+
+ps:P3452  a     owl:ObjectProperty .
+
+wd:Q6581097  a              wikibase:Item ;
+        rdfs:label          "male"@en ;
+        schema:description  "human who is male  (use with P21)"@en ;
+        schema:name         "male"@en ;
+        skos:prefLabel      "male"@en .
+
+wikibase:statementValue
+        a       puml:InlineProperty .
+
+ps:P27  a       owl:ObjectProperty .
+
+pqv:P569  a     owl:ObjectProperty .
+
+wd:P5239  a                             wikibase:Property ;
+        rdfs:label                      "Artists in Canada record number"@en ;
+        schema:name                     "Artists in Canada record number"@en ;
+        wikibase:claim                  p:P5239 ;
+        wikibase:directClaim            wdt:P5239 ;
+        wikibase:directClaimNormalized  wdtn:P5239 ;
+        wikibase:novalue                wdno:P5239 ;
+        wikibase:propertyType           wikibase:ExternalId ;
+        wikibase:qualifier              pq:P5239 ;
+        wikibase:qualifierValue         pqv:P5239 ;
+        wikibase:qualifierValueNormalized
+                pqn:P5239 ;
+        wikibase:reference              pr:P5239 ;
+        wikibase:referenceValue         prv:P5239 ;
+        wikibase:referenceValueNormalized
+                prn:P5239 ;
+        wikibase:statementProperty      ps:P5239 ;
+        wikibase:statementValue         psv:P5239 ;
+        wikibase:statementValueNormalized
+                psn:P5239 ;
+        skos:prefLabel                  "Artists in Canada record number"@en .
+
+ps:P735  a      owl:ObjectProperty .
+
+wdno:P19  a     owl:Class .
+
+pqv:P5368  a    owl:ObjectProperty .
+
+pr:P19  a       owl:ObjectProperty .
+
+psv:P735  a     owl:ObjectProperty .
+
+wd:P1810  a                         wikibase:Property ;
+        rdfs:label                  "named as"@en ;
+        schema:name                 "named as"@en ;
+        wikibase:claim              p:P1810 ;
+        wikibase:directClaim        wdt:P1810 ;
+        wikibase:novalue            wdno:P1810 ;
+        wikibase:propertyType       wikibase:String ;
+        wikibase:qualifier          pq:P1810 ;
+        wikibase:qualifierValue     pqv:P1810 ;
+        wikibase:reference          pr:P1810 ;
+        wikibase:referenceValue     prv:P1810 ;
+        wikibase:statementProperty  ps:P1810 ;
+        wikibase:statementValue     psv:P1810 ;
+        skos:prefLabel              "named as"@en .
+
+wdt:P1810  a    owl:DatatypeProperty .
+
+wds:Q55218544-230d5663-4cb4-6471-e373-e539de795f8f
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P21         wd:Q6581097 .
+
+prv:P1810  a    owl:ObjectProperty .
+
+p:P106  a       owl:ObjectProperty .
+
+pr:P106  a      owl:ObjectProperty .
+
+wd:Q16  a                   wikibase:Item , puml:Inline ;
+        rdfs:label          "Canada"@en ;
+        schema:description  "country in North America"@en ;
+        schema:name         "Canada"@en ;
+        skos:prefLabel      "Canada"@en .
+
+p:P248  a       owl:ObjectProperty .
+
+p:P21   a       owl:ObjectProperty .
+
+wdv:b3795d3425e0bbdd474f3138cad4a069
+        a                           wikibase:TimeValue ;
+        wikibase:timeCalendarModel  wd:Q1985727 ;
+        wikibase:timePrecision      11 ;
+        wikibase:timeTimezone       0 ;
+        wikibase:timeValue          "2017-10-09T00:00:00Z"^^xsd:dateTime .
+
+pr:P248  a      owl:ObjectProperty .
+
+wd:Q5   a                   wikibase:Item , puml:Inline ;
+        rdfs:label          "human"@en ;
+        schema:description  "common name of Homo sapiens, unique extant species of the genus Homo"@en ;
+        schema:name         "human"@en ;
+        skos:prefLabel      "human"@en .
+
+wikibase:claim  a  puml:InlineProperty .
+
+wdno:P27  a     owl:Class .
+
+wikibase:rank  a  puml:InlineProperty .
+
+wd:P5368  a                             wikibase:Property ;
+        rdfs:label                      "National Gallery of Canada artist ID"@en ;
+        schema:name                     "National Gallery of Canada artist ID"@en ;
+        wikibase:claim                  p:P5368 ;
+        wikibase:directClaim            wdt:P5368 ;
+        wikibase:directClaimNormalized  wdtn:P5368 ;
+        wikibase:novalue                wdno:P5368 ;
+        wikibase:propertyType           wikibase:ExternalId ;
+        wikibase:qualifier              pq:P5368 ;
+        wikibase:qualifierValue         pqv:P5368 ;
+        wikibase:qualifierValueNormalized
+                pqn:P5368 ;
+        wikibase:reference              pr:P5368 ;
+        wikibase:referenceValue         prv:P5368 ;
+        wikibase:referenceValueNormalized
+                prn:P5368 ;
+        wikibase:statementProperty      ps:P5368 ;
+        wikibase:statementValue         psv:P5368 ;
+        wikibase:statementValueNormalized
+                psn:P5368 ;
+        skos:prefLabel                  "National Gallery of Canada artist ID"@en .
+
+wdtn:P5239  a   owl:ObjectProperty .
+
+pr:P27  a       owl:ObjectProperty .
+
+prv:P854  a     owl:ObjectProperty .
+
+p:P4656  a      owl:ObjectProperty .
+
+p:P6379  a      owl:ObjectProperty .
+
+pq:P3452  a     owl:ObjectProperty .
+
+prv:P31  a      owl:ObjectProperty .
+
+psn:P5239  a    owl:ObjectProperty .
+
+wikibase:statementValueNormalized
+        a       puml:InlineProperty .
+
+wd:P735  a                          wikibase:Property ;
+        rdfs:label                  "given name"@en ;
+        schema:name                 "given name"@en ;
+        wikibase:claim              p:P735 ;
+        wikibase:directClaim        wdt:P735 ;
+        wikibase:novalue            wdno:P735 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P735 ;
+        wikibase:qualifierValue     pqv:P735 ;
+        wikibase:reference          pr:P735 ;
+        wikibase:referenceValue     prv:P735 ;
+        wikibase:statementProperty  ps:P735 ;
+        wikibase:statementValue     psv:P735 ;
+        skos:prefLabel              "given name"@en .
+
+wdno:P813  a    owl:Class .
+
+pqn:P5239  a    owl:ObjectProperty .
+
+pqv:P735  a     owl:ObjectProperty .
+
+p:P569  a       owl:ObjectProperty .
+
+pr:P569  a      owl:DatatypeProperty .
+
+wds:Q55218544-3607875D-86EA-49F1-A22B-F534D287091B
+        a                    wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank        wikibase:NormalRank ;
+        prov:wasDerivedFrom  wdref:93589196c06da7881388a563515fa6f66039c114 , wdref:43e8403da0cc464789477990d0530665cafff363 ;
+        ps:P569              "1951-01-01T00:00:00Z"^^xsd:dateTime ;
+        psv:P569             wdv:d2286155bf180ae2a1a26480f81d9168 .
+
+wdref:43e8403da0cc464789477990d0530665cafff363
+        a         wikibase:Reference ;
+        pr:P813   "2018-06-26T00:00:00Z"^^xsd:dateTime ;
+        pr:P854   <https://www.gallery.ca/collection/artist/johnny-aculiak> ;
+        prv:P813  wdv:0bc6fe9ebb7ac6933845a620673ee102 .
+
+psv:P19  a      owl:ObjectProperty .
+
+wdtn:P5368  a   owl:ObjectProperty .
+
+wdt:P106  a     owl:ObjectProperty .
+
+wdt:P248  a     owl:ObjectProperty .
+
+psn:P5368  a    owl:ObjectProperty .
+
+wikibase:qualifier  a  puml:InlineProperty .
+
+wd:P19  a                           wikibase:Property ;
+        rdfs:label                  "place of birth"@en ;
+        schema:name                 "place of birth"@en ;
+        wikibase:claim              p:P19 ;
+        wikibase:directClaim        wdt:P19 ;
+        wikibase:novalue            wdno:P19 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P19 ;
+        wikibase:qualifierValue     pqv:P19 ;
+        wikibase:reference          pr:P19 ;
+        wikibase:referenceValue     prv:P19 ;
+        wikibase:statementProperty  ps:P19 ;
+        wikibase:statementValue     psv:P19 ;
+        skos:prefLabel              "place of birth"@en .
+
+pqn:P5368  a    owl:ObjectProperty .
+
+psv:P27  a      owl:ObjectProperty .
+
+p:P5239  a      owl:ObjectProperty .
+
+pq:P813  a      owl:DatatypeProperty .
+
+wds:Q55218544-5E7BF832-2377-460A-925E-6B0B0BBF6893
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P5368       "johnny-aculiak" .
+
+p:P735  a       owl:ObjectProperty .
+
+wdt:P569  a     owl:DatatypeProperty .
+
+pr:P735  a      owl:ObjectProperty .
+
+wd:P27  a                           wikibase:Property ;
+        rdfs:label                  "country of citizenship"@en ;
+        schema:name                 "country of citizenship"@en ;
+        wikibase:claim              p:P27 ;
+        wikibase:directClaim        wdt:P27 ;
+        wikibase:novalue            wdno:P27 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P27 ;
+        wikibase:qualifierValue     pqv:P27 ;
+        wikibase:reference          pr:P27 ;
+        wikibase:referenceValue     prv:P27 ;
+        wikibase:statementProperty  ps:P27 ;
+        wikibase:statementValue     psv:P27 ;
+        skos:prefLabel              "country of citizenship"@en .
+
+ps:P4656  a     owl:ObjectProperty .
+
+ps:P6379  a     owl:ObjectProperty .
+
+wds:Q55218544-3DBC352A-A096-40B8-9A8D-3E6095DCA0A8
+        a                    wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank        wikibase:NormalRank ;
+        prov:wasDerivedFrom  wdref:43e8403da0cc464789477990d0530665cafff363 ;
+        ps:P106              wd:Q483501 .
+
+p:P5368  a      owl:ObjectProperty .
+
+wd:P3452  a                         wikibase:Property ;
+        rdfs:label                  "inferred from"@en ;
+        schema:name                 "inferred from"@en ;
+        wikibase:claim              p:P3452 ;
+        wikibase:directClaim        wdt:P3452 ;
+        wikibase:novalue            wdno:P3452 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P3452 ;
+        wikibase:qualifierValue     pqv:P3452 ;
+        wikibase:reference          pr:P3452 ;
+        wikibase:referenceValue     prv:P3452 ;
+        wikibase:statementProperty  ps:P3452 ;
+        wikibase:statementValue     psv:P3452 ;
+        skos:prefLabel              "inferred from"@en .
+
+wds:Q55218544-349902C1-7464-46C3-B9BD-5EECE8AEF936
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P735        wd:Q1762022 .
+
+wdt:P3452  a    owl:ObjectProperty .
+
+prv:P3452  a    owl:ObjectProperty .
+
+ps:P854  a      owl:ObjectProperty .
+
+wdt:P31  a      owl:ObjectProperty .
+
+wdno:P106  a    owl:Class .
+
+prv:P21  a      owl:ObjectProperty .
+
+wikibase:propertyType
+        a       puml:InlineProperty .
+
+psv:P854  a     owl:ObjectProperty .
+
+wikibase:qualifierValueNormalized
+        a       puml:InlineProperty .
+
+p:P19   a       owl:ObjectProperty .
+
+wdno:P248  a    owl:Class .
+
+pq:P4656  a     owl:ObjectProperty .
+
+pr:P1810  a     owl:DatatypeProperty .
+
+pq:P6379  a     owl:ObjectProperty .
+
+wdt:P735  a     owl:ObjectProperty .
+
+ps:P5239  a     owl:DatatypeProperty .
+
+wikibase:novalue  a  puml:InlineProperty .
+
+wdv:0bc6fe9ebb7ac6933845a620673ee102
+        a                           wikibase:TimeValue ;
+        wikibase:timeCalendarModel  wd:Q1985727 ;
+        wikibase:timePrecision      11 ;
+        wikibase:timeTimezone       0 ;
+        wikibase:timeValue          "2018-06-26T00:00:00Z"^^xsd:dateTime .
+
+p:P27   a       owl:ObjectProperty .
+
+wdref:5da6646f7f1b41efa8ae53c1364bff5558cc7c50
+        a         wikibase:Reference ;
+        pr:P248   wd:Q56027560 ;
+        pr:P5239  "47459" .
+
+pq:P31  a       owl:ObjectProperty .
+
+pqv:P31  a      owl:ObjectProperty .
+
+wd:Q22639217  a         wikibase:Item ;
+        rdfs:label      "Hopewell Islands"@en ;
+        schema:name     "Hopewell Islands"@en ;
+        skos:prefLabel  "Hopewell Islands"@en .
+
+wd:P854  a                          wikibase:Property ;
+        rdfs:label                  "reference URL"@en ;
+        schema:name                 "reference URL"@en ;
+        wikibase:claim              p:P854 ;
+        wikibase:directClaim        wdt:P854 ;
+        wikibase:novalue            wdno:P854 ;
+        wikibase:propertyType       wikibase:Url ;
+        wikibase:qualifier          pq:P854 ;
+        wikibase:qualifierValue     pqv:P854 ;
+        wikibase:reference          pr:P854 ;
+        wikibase:referenceValue     prv:P854 ;
+        wikibase:statementProperty  ps:P854 ;
+        wikibase:statementValue     psv:P854 ;
+        skos:prefLabel              "reference URL"@en .
+
+wdno:P569  a    owl:Class .
+
+wd:Q1281618  a              wikibase:Item ;
+        rdfs:label          "sculptor"@en ;
+        schema:description  "artist specializing in sculpture"@en ;
+        schema:name         "sculptor"@en ;
+        skos:prefLabel      "sculptor"@en .
+
+pqv:P854  a     owl:ObjectProperty .
+
+pq:P106  a      owl:ObjectProperty .
+
+ps:P5368  a     owl:DatatypeProperty .
+
+pq:P248  a      owl:ObjectProperty .
+
+wikibase:directClaimNormalized
+        a       puml:InlineProperty .
+
+pq:P5239  a     owl:DatatypeProperty .
+
+wikibase:directClaim  a  puml:InlineProperty .
+
+pqv:P1810  a    owl:ObjectProperty .
+
+pq:P569  a      owl:DatatypeProperty .
+
+wdref:91b3ffe83b47579eea249777d83ec273f1de439b
+        a         wikibase:Reference ;
+        pr:P3452  wd:Q1068063 ;
+        pr:P4656  <https://www.wikidata.org/wiki/Property:P5368#P2302> , <https://www.wikidata.org/wiki/Q55218544#P5368> .
+
+wdata:Q55218544  a              schema:Dataset ;
+        cc:license              <http://creativecommons.org/publicdomain/zero/1.0/> ;
+        schema:about            wd:Q55218544 ;
+        schema:dateModified     "2019-02-12T23:20:25Z"^^xsd:dateTime ;
+        schema:softwareVersion  "1.0.0" ;
+        schema:version          857029101 ;
+        wikibase:identifiers    2 ;
+        wikibase:sitelinks      0 ;
+        wikibase:statements     11 .
+
+wdno:P735  a    owl:Class .
+
+wdt:P4656  a    owl:ObjectProperty .
+
+wd:P4656  a                         wikibase:Property ;
+        rdfs:label                  "Wikimedia import URL"@en ;
+        schema:name                 "Wikimedia import URL"@en ;
+        wikibase:claim              p:P4656 ;
+        wikibase:directClaim        wdt:P4656 ;
+        wikibase:novalue            wdno:P4656 ;
+        wikibase:propertyType       wikibase:Url ;
+        wikibase:qualifier          pq:P4656 ;
+        wikibase:qualifierValue     pqv:P4656 ;
+        wikibase:reference          pr:P4656 ;
+        wikibase:referenceValue     prv:P4656 ;
+        wikibase:statementProperty  ps:P4656 ;
+        wikibase:statementValue     psv:P4656 ;
+        skos:prefLabel              "Wikimedia import URL"@en .
+
+wdt:P21  a      owl:ObjectProperty .
+
+pq:P5368  a     owl:DatatypeProperty .
+
+p:P854  a       owl:ObjectProperty .
+
+wdt:P6379  a    owl:ObjectProperty .
+
+pr:P854  a      owl:ObjectProperty , puml:InlineProperty .
+
+prv:P813  a     owl:ObjectProperty .
+
+prv:P4656  a    owl:ObjectProperty .
+
+prv:P6379  a    owl:ObjectProperty .
+
+wikibase:referenceValueNormalized
+        a       puml:InlineProperty .
+
+wds:Q55218544-3F8A5CC9-2A4F-4CBE-96D6-4186734540DC
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P31         wd:Q5 .
+
+wikibase:timeCalendarModel
+        a       puml:InlineProperty .
+
+pr:P3452  a     owl:ObjectProperty .
+
+prv:P19  a      owl:ObjectProperty .
+
+ps:P31  a       owl:ObjectProperty .
+
+wikibase:qualifierValue
+        a       puml:InlineProperty .
+
+pq:P21  a       owl:ObjectProperty .
+
+pqv:P21  a      owl:ObjectProperty .
+
+pq:P735  a      owl:ObjectProperty .
+
+wdt:P854  a     owl:ObjectProperty .
+
+wdt:P5239  a    owl:DatatypeProperty .
+
+prv:P27  a      owl:ObjectProperty .
+
+prv:P5239  a    owl:ObjectProperty .
+
+wd:Q1068063  a              wikibase:Item ;
+        rdfs:label          "National Gallery of Canada"@en ;
+        schema:description  "museum of art in Ottawa"@en ;
+        schema:name         "National Gallery of Canada"@en ;
+        skos:prefLabel      "National Gallery of Canada"@en .
+
+wdno:P31  a     owl:Class .
+
+pr:P31  a       owl:ObjectProperty .
+
+psv:P4656  a    owl:ObjectProperty .
+
+wds:Q55218544-182c423d-4192-6d4d-05b0-cdb7ce11c057
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P19         wd:Q22639217 .
+
+wd:Q56027560  a             wikibase:Item ;
+        rdfs:label          "Artists in Canada"@en ;
+        schema:description  "documentation file on Canadian artists maintained by the National Gallery of Canada Library"@en ;
+        schema:name         "Artists in Canada"@en ;
+        skos:prefLabel      "Artists in Canada"@en .
+
+psv:P6379  a    owl:ObjectProperty .
+
+wdt:P5368  a    owl:DatatypeProperty .
+
+wd:Q1762022  a              wikibase:Item ;
+        rdfs:label          "Johnny"@en ;
+        schema:description  "given name"@en ;
+        schema:name         "Johnny"@en ;
+        skos:prefLabel      "Johnny"@en .
+
+prv:P5368  a    owl:ObjectProperty .
+
+wdno:P4656  a   owl:Class .
+
+wdno:P6379  a   owl:Class .
+
+pqv:P3452  a    owl:ObjectProperty .

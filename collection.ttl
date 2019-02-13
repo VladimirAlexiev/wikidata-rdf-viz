@@ -1,0 +1,189 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix puml:  <http://plantuml.com/ontology#> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix wdata: <https://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+
+cc:license  a   puml:InlineProperty .
+
+psv:P31  a      owl:ObjectProperty .
+
+pqv:P31  a      owl:ObjectProperty .
+
+wikibase:timeCalendarModel
+        a       puml:InlineProperty .
+
+ps:P31  a       owl:ObjectProperty .
+
+prv:P127  a     owl:ObjectProperty .
+
+wikibase:qualifierValue
+        a       puml:InlineProperty .
+
+wdno:P31  a     owl:Class .
+
+p:P127  a       owl:ObjectProperty .
+
+wikibase:claim  a  puml:InlineProperty .
+
+pr:P854  a      puml:InlineProperty .
+
+wds:Q61707930-7ee4d424-4d21-0af1-145f-de2d887b1be2
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P31         wd:Q2668072 .
+
+wikibase:referenceValue
+        a       puml:InlineProperty .
+
+wd:Q5   a       puml:Inline .
+
+wikibase:directClaimNormalized
+        a       puml:InlineProperty .
+
+pr:P127  a      owl:ObjectProperty .
+
+wikibase:statementValueNormalized
+        a       puml:InlineProperty .
+
+wikibase:reference  a  puml:InlineProperty .
+
+pq:P31  a       owl:ObjectProperty .
+
+wdt:P31  a      owl:ObjectProperty .
+
+wd:P127  a                          wikibase:Property ;
+        rdfs:label                  "owned by"@en ;
+        schema:name                 "owned by"@en ;
+        wikibase:claim              p:P127 ;
+        wikibase:directClaim        wdt:P127 ;
+        wikibase:novalue            wdno:P127 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P127 ;
+        wikibase:qualifierValue     pqv:P127 ;
+        wikibase:reference          pr:P127 ;
+        wikibase:referenceValue     prv:P127 ;
+        wikibase:statementProperty  ps:P127 ;
+        wikibase:statementValue     psv:P127 ;
+        skos:prefLabel              "owned by"@en .
+
+wd:Q16  a       puml:Inline .
+
+pr:P31  a       owl:ObjectProperty .
+
+wd:P31  a                           wikibase:Property ;
+        rdfs:label                  "instance of"@en ;
+        schema:name                 "instance of"@en ;
+        wikibase:claim              p:P31 ;
+        wikibase:directClaim        wdt:P31 ;
+        wikibase:novalue            wdno:P31 ;
+        wikibase:propertyType       wikibase:WikibaseItem ;
+        wikibase:qualifier          pq:P31 ;
+        wikibase:qualifierValue     pqv:P31 ;
+        wikibase:reference          pr:P31 ;
+        wikibase:referenceValue     prv:P31 ;
+        wikibase:statementProperty  ps:P31 ;
+        wikibase:statementValue     psv:P31 ;
+        skos:prefLabel              "instance of"@en .
+
+wikibase:novalue  a  puml:InlineProperty .
+
+wd:Q61707930  a             wikibase:Item ;
+        rdfs:label          "Friends of Beaubears Island Collection"@en ;
+        schema:description  "the collection of Beaubears Island Interpretive Centre & Museum"@en ;
+        schema:name         "Friends of Beaubears Island Collection"@en ;
+        skos:prefLabel      "Friends of Beaubears Island Collection"@en ;
+        p:P127              wds:Q61707930-48dc6f81-473a-3525-2aac-a01e14961abd ;
+        p:P31               wds:Q61707930-7ee4d424-4d21-0af1-145f-de2d887b1be2 ;
+        wdt:P127            wd:Q61707913 ;
+        wdt:P31             wd:Q2668072 .
+
+wikibase:statementValue
+        a       puml:InlineProperty .
+
+wikibase:qualifier  a  puml:InlineProperty .
+
+pq:P127  a      owl:ObjectProperty .
+
+wdata:Q61707930  a              schema:Dataset ;
+        cc:license              <http://creativecommons.org/publicdomain/zero/1.0/> ;
+        schema:about            wd:Q61707930 ;
+        schema:dateModified     "2019-02-12T16:14:30Z"^^xsd:dateTime ;
+        schema:softwareVersion  "1.0.0" ;
+        schema:version          856720308 ;
+        wikibase:identifiers    0 ;
+        wikibase:sitelinks      0 ;
+        wikibase:statements     2 .
+
+psv:P127  a     owl:ObjectProperty .
+
+prv:P31  a      owl:ObjectProperty .
+
+wds:Q61707930-48dc6f81-473a-3525-2aac-a01e14961abd
+        a              wikibase:BestRank , wikibase:Statement ;
+        wikibase:rank  wikibase:NormalRank ;
+        ps:P127        wd:Q61707913 .
+
+ps:P127  a      owl:ObjectProperty .
+
+wd:Q61707913  a             wikibase:Item ;
+        rdfs:label          "Beaubears Island Interpretive Centre & Museum"@en ;
+        schema:description  "museum in New Brunswick, Canada"@en ;
+        schema:name         "Beaubears Island Interpretive Centre & Museum"@en ;
+        skos:prefLabel      "Beaubears Island Interpretive Centre & Museum"@en .
+
+wikibase:rank  a  puml:InlineProperty .
+
+pqv:P127  a     owl:ObjectProperty .
+
+wd:Q2668072  a              wikibase:Item ;
+        rdfs:label          "collection"@en ;
+        schema:description  "set of purposefully collected or gathered objects with some common characteristics (should be qualified with P642 for more precision)"@en ;
+        schema:name         "collection"@en ;
+        skos:prefLabel      "collection"@en .
+
+wikibase:directClaim  a  puml:InlineProperty .
+
+wdt:P127  a     owl:ObjectProperty .
+
+wikibase:referenceValueNormalized
+        a       puml:InlineProperty .
+
+wdno:P127  a    owl:Class .
+
+wikibase:statementProperty
+        a       puml:InlineProperty .
+
+wikibase:propertyType
+        a       puml:InlineProperty .
+
+wikibase:qualifierValueNormalized
+        a       puml:InlineProperty .
+
+p:P31   a       owl:ObjectProperty .
