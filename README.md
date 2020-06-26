@@ -11,7 +11,7 @@ But even it doesn't describe the whole story, eg `wikibase:directClaimNormalized
 
 Here are some simple scripts to:
 - Download some Wikidata entities and save as Turtle: [wdget.pl](wdget.pl)
-- Visualize the RDF graphs using `rdfpuml` from https://github.com/VladimirAlexiev/rdf2rml: `Makefile`
+- Visualize the RDF graphs using `rdfpuml` from https://github.com/VladimirAlexiev/rdf2rml: [Makefile](makefile)
 - Save as PNG (in many cases the canvas is cut off on the right!) and SVG (the full diagram is seen)
 
 ## Simpler Example: PNG
